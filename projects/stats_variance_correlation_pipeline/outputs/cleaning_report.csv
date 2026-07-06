@@ -1,5 +1,5 @@
 ﻿field,value
-source_path,D:\工作流\portfolio\projects\stats_variance_correlation_pipeline\data\example_measurements.csv
+source_path,portfolio/projects/stats_variance_correlation_pipeline/data/example_measurements.csv
 original_rows,60
 cleaned_rows,60
 duplicate_rows_removed,0

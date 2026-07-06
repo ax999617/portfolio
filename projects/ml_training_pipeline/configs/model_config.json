@@ -1,5 +1,5 @@
 {
-  "source_root": "D:\\shiwanwuax",
+  "source_root": "<local-source>/ml-training",
   "task": "3-class image recognition",
   "classes": [
     {
@@ -21,7 +21,7 @@
   "model": {
     "architecture": "resnet18",
     "num_classes": 3,
-    "source_file": "D:\\shiwanwuax\\trained.py"
+    "source_file": "<local-source>/ml-training/trained.py"
   },
   "artifacts": {
     "trained": "artifacts/weights/trained.pth",

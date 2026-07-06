@@ -2,8 +2,8 @@
 
 Source provenance:
 
-- Original workflow file: `E:\ComfyUI-aki-v1.7\ComfyUI\my_workflows\工作流\axstar_inpaint.json`
-- Candidate output root: `E:\ComfyUI-aki-v1.7\ComfyUI\output`
+- Original workflow file: `<local-source>/comfyui/workflows/axstar_inpaint.json`
+- Candidate output root: `<local-source>/comfyui/output`
 - Source CSV: none identified in this asset set
 
 ## Problem definition
@@ -35,4 +35,4 @@ Pipeline logic:
 
 ## Results
 
-Example output copied from `E:\ComfyUI-aki-v1.7\ComfyUI\output\axstar_inpaint_composited_00014_.png` into `example_outputs/axstar_inpaint_composited_00014_.png`. For generic filename prefixes, treat this as a local output candidate rather than a guaranteed single-workflow artifact.
+Example output copied from `<local-source>/comfyui/output/axstar_inpaint_composited_00014_.png` into `example_outputs/axstar_inpaint_composited_00014_.png`. For generic filename prefixes, treat this as a local output candidate rather than a guaranteed single-workflow artifact.

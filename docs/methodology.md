@@ -2,7 +2,7 @@
 
 Source provenance:
 
-- Source roots: `D:\202604竞赛项目`, `D:\shiwanwuax`, `E:\ComfyUI-aki-v1.7\ComfyUI\my_workflows\工作流`, `C:\Program Files\AutoHotkey\v2\AutoHotkey64.exe`
+- Source roots: `<local-source>/wheat-disease-demo`, `<local-source>/ml-training`, `<local-source>/comfyui/workflows`, `AutoHotkey v2 runtime`
 - Source CSV: none identified in the inspected asset sets
 
 ## Consolidation Approach

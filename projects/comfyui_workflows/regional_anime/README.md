@@ -2,8 +2,8 @@
 
 Source provenance:
 
-- Original workflow file: `E:\ComfyUI-aki-v1.7\ComfyUI\my_workflows\工作流\分区工作流（二次元）.json`
-- Candidate output root: `E:\ComfyUI-aki-v1.7\ComfyUI\output`
+- Original workflow file: `<local-source>/comfyui/workflows/分区工作流（二次元）.json`
+- Candidate output root: `<local-source>/comfyui/output`
 - Source CSV: none identified in this asset set
 
 ## Problem definition
@@ -35,4 +35,4 @@ Pipeline logic:
 
 ## Results
 
-Example output copied from `E:\ComfyUI-aki-v1.7\ComfyUI\output\Illustrious_character_pose_00004_.png` into `example_outputs/Illustrious_character_pose_00004_.png`. For generic filename prefixes, treat this as a local output candidate rather than a guaranteed single-workflow artifact.
+Example output copied from `<local-source>/comfyui/output/Illustrious_character_pose_00004_.png` into `example_outputs/Illustrious_character_pose_00004_.png`. For generic filename prefixes, treat this as a local output candidate rather than a guaranteed single-workflow artifact.

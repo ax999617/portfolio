@@ -2,7 +2,7 @@
 
 Source provenance:
 
-- Original wheat demo source: `D:\202604竞赛项目`
+- Original wheat demo source: `<local-source>/wheat-disease-demo`
 - Real wheat training loop: not present in the inspected source directory
 - Source CSV: none identified in this asset set
 

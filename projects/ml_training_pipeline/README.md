@@ -2,10 +2,10 @@
 
 Source provenance:
 
-- Original project root: `D:\shiwanwuax`
-- Training/model files: `D:\shiwanwuax`
-- Model artifacts: `D:\shiwanwuax\model`
-- Reference images: `D:\shiwanwuax\reference_images`
+- Original project root: `<local-source>/ml-training`
+- Training/model files: `<local-source>/ml-training`
+- Model artifacts: `<local-source>/ml-training/model`
+- Reference images: `<local-source>/ml-training/reference_images`
 - Source CSV: none identified in this asset set
 
 ## Problem definition

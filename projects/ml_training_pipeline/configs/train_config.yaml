@@ -1,4 +1,4 @@
-source_root: "D:\shiwanwuax"
+source_root: "<local-source>/ml-training"
 task: "3-class image recognition"
 num_classes: 3
 model_architecture: "resnet18"
@@ -7,9 +7,9 @@ preprocessing:
   normalization_mean: [0.485, 0.456, 0.406]
   normalization_std: [0.229, 0.224, 0.225]
 extracted_from:
-  dataset_processing: "D:\shiwanwuax\dataset_processing.py"
-  trained_model: "D:\shiwanwuax\trained.py"
-  quantization_pipeline: "D:\shiwanwuax\quantized.py"
+  dataset_processing: "<local-source>/ml-training/dataset_processing.py"
+  trained_model: "<local-source>/ml-training/trained.py"
+  quantization_pipeline: "<local-source>/ml-training/quantized.py"
 runnable_defaults:
   batch_size: 16
   epochs: 10

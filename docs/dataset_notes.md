@@ -2,17 +2,17 @@
 
 Source provenance:
 
-- Wheat disease demo source: `D:\202604竞赛项目`
-- ML training source: `D:\shiwanwuax`
-- ComfyUI workflows: `E:\ComfyUI-aki-v1.7\ComfyUI\my_workflows\工作流`
-- AutoHotkey runtime: `C:\Program Files\AutoHotkey\v2\AutoHotkey64.exe`
+- Wheat disease demo source: `<local-source>/wheat-disease-demo`
+- ML training source: `<local-source>/ml-training`
+- ComfyUI workflows: `<local-source>/comfyui/workflows`
+- AutoHotkey runtime: `AutoHotkey v2 runtime`
 - Source CSV: none identified in the inspected asset sets
 
 ## Wheat Disease Demo
 
 The wheat project is represented by backend inference code, knowledge-base JSON, and screenshots from the demo flow. The source backend states that the current inference mode is an MVP demo rule engine with a reserved real-model adapter. Therefore this portfolio does not claim new accuracy results.
 
-Representative screenshots were copied from `D:\202604竞赛项目\screenshots\2026-05-13_backend-demo` into `assets/results/cv_wheat_disease/`.
+Representative screenshots were copied from `<local-source>/wheat-disease-demo/screenshots/2026-05-13_backend-demo` into `assets/results/cv_wheat_disease/`.
 
 ## ML Training Pipeline
 
@@ -30,7 +30,7 @@ Four workflow JSON files were copied from the workflow root. Example images were
 
 ## Automation Scripts
 
-The user-provided AutoHotkey path is a runtime executable, not a script. Custom scripts were located under `D:\shiwanwuax\haiku4.5\AutoHotkey` and copied into the low-priority system tools project.
+The user-provided AutoHotkey path is a runtime executable, not a script. Custom scripts were located under `<local-source>/system-tools/autohotkey` and copied into the low-priority system tools project.
 
 ## Constraints Followed
 

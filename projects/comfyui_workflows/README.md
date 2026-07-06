@@ -2,8 +2,8 @@
 
 Source provenance:
 
-- Workflow root: `E:\ComfyUI-aki-v1.7\ComfyUI\my_workflows\工作流`
-- Candidate output image root: `E:\ComfyUI-aki-v1.7\ComfyUI\output`
+- Workflow root: `<local-source>/comfyui/workflows`
+- Candidate output image root: `<local-source>/comfyui/output`
 - Source CSV: none identified in this asset set
 
 ## Problem definition
@@ -24,6 +24,8 @@ Each workflow is split into its own subdirectory with the original `workflow.jso
 ## How to run
 
 Open ComfyUI, import a subdirectory's `workflow.json`, confirm model/checkpoint/LoRA paths exist in the local ComfyUI installation, set prompts or input images, then queue the graph.
+
+Cloud note: workflow files have been sanitized for publication. Model references are relative placeholders such as `models/...`; replace them with the model names or subpaths available in your local ComfyUI setup before running.
 
 ## Results
 

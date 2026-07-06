@@ -2,11 +2,11 @@
 
 Source provenance:
 
-- Current portfolio root: `D:\工作流\portfolio`
-- Original wheat demo: `D:\202604竞赛项目`
-- Original ML training code: `D:\shiwanwuax`
-- Original ComfyUI workflows: `E:\ComfyUI-aki-v1.7\ComfyUI\my_workflows\工作流`
-- AutoHotkey runtime and scripts: `C:\Program Files\AutoHotkey\v2\AutoHotkey64.exe`, `D:\shiwanwuax\haiku4.5\AutoHotkey`
+- Current portfolio root: `portfolio`
+- Original wheat demo: `<local-source>/wheat-disease-demo`
+- Original ML training code: `<local-source>/ml-training`
+- Original ComfyUI workflows: `<local-source>/comfyui/workflows`
+- AutoHotkey runtime and scripts: `AutoHotkey v2 runtime`, `<local-source>/system-tools/autohotkey`
 - Source CSV: none identified in the inspected asset sets
 
 ## Repository Map

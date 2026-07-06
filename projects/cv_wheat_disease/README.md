@@ -2,9 +2,9 @@
 
 Source provenance:
 
-- Original project root: `D:\202604竞赛项目`
-- Backend source: `D:\202604竞赛项目\后端`
-- Result screenshots: `D:\202604竞赛项目\screenshots\2026-05-13_backend-demo`
+- Original project root: `<local-source>/wheat-disease-demo`
+- Backend source: `<local-source>/wheat-disease-demo/后端`
+- Result screenshots: `<local-source>/wheat-disease-demo/screenshots/2026-05-13_backend-demo`
 - Source CSV: none identified in this asset set
 
 ## Problem definition

@@ -1,7 +1,7 @@
 [
   {
     "timestamp": "2025-10-30T03:24:49.126578",
-    "file": "D:/\u8bc6\u4e07\u7269APP\u526f\u672c/date/\u6d1b\u9633\u7261\u4e39/Camera_1040g0k031g4m3pk416405odr4db8d1sdagsqeio (1).jpg",
+    "file": "<local-source>/external-assets/Camera_1040g0k031g4m3pk416405odr4db8d1sdagsqeio (1).jpg",
     "model": "trained",
     "result": [
       "\u4fe1\u9633\u6bdb\u5c16\u8336\u6811",
@@ -10,7 +10,7 @@
   },
   {
     "timestamp": "2025-10-30T03:10:46.528744",
-    "file": "D:/\u8bc6\u4e07\u7269APP\u526f\u672c/date/\u6d1b\u9633\u7261\u4e39/Camera_1040g3k031ff063f6n4005p7kls3hm3umnsoqqa8.jpg",
+    "file": "<local-source>/external-assets/Camera_1040g3k031ff063f6n4005p7kls3hm3umnsoqqa8.jpg",
     "model": "trained",
     "result": [
       "\u6d1b\u9633\u7261\u4e39",

@@ -1,36 +1,54 @@
 # Portfolio
 
-This repository is a structured engineering portfolio built from local project assets. It is designed for internship applications: the emphasis is clarity, reproducibility, project boundaries, and a readable story rather than a raw file dump.
+This repository is a cloud-ready internship portfolio built from several local engineering and research projects. The focus is not a raw file dump: each module has a readable structure, a short project story, reproducible entrypoints, and representative outputs.
 
 ## Capability Areas
 
-### Computer Vision / ML
+**Computer Vision / ML**
 
-- `projects/cv_wheat_disease/`: Wheat disease visual-classification demo with separated inference interface, risk engine, knowledge response, and representative result screenshots.
-- `projects/ml_training_pipeline/`: Refactored ML training project with train/eval/inference separation, extracted config, model artifacts, and reference images.
+- `projects/cv_wheat_disease/`: Wheat disease visual-classification demo with separated inference logic, risk explanation, and sample UI/backend outputs.
+- `projects/ml_training_pipeline/`: Refactored image-recognition training pipeline with config files, model artifacts, train/eval/inference separation, and reference assets.
 
-### Data Analysis
+**Data Analysis**
 
-- `docs/dataset_notes.md`: Source asset notes, dataset boundaries, and reproducibility constraints.
-- `docs/methodology.md`: Engineering decisions used to convert scattered files into portfolio projects.
+- `projects/stats_variance_correlation_pipeline/`: Statistical analysis pipeline for data cleaning, variance analysis, correlation matrices, figure generation, and PDF report export.
+- `docs/dataset_notes.md`: Short notes on dataset boundaries and reproducibility assumptions.
 
-### Generative Pipeline (ComfyUI)
+**Generative Pipeline (ComfyUI)**
 
-- `projects/comfyui_workflows/`: Four ComfyUI workflows split into documented subprojects with pipeline explanations and selected output examples.
+- `projects/comfyui_workflows/`: Documented ComfyUI workflows split by use case, with sanitized workflow files and example outputs.
 
-### System Tools / Automation
+**System Tools / Automation**
 
-- `projects/system_tools/`: Low-priority AutoHotkey desktop UI utility organized as a supporting automation example.
-- `projects/misc_tools/`: Portfolio support notes and consolidation context.
+- `projects/system_tools/`: Small AutoHotkey utility module for desktop automation.
+- `projects/misc_tools/`: Supporting notes for repository organization.
 
-## Recommended Reading Order For Recruiters
+## Recommended Reading Order
 
-1. Start with `projects/cv_wheat_disease/README.md` for the clearest end-to-end application demo.
-2. Read `projects/ml_training_pipeline/README.md` to understand the model engineering structure and available artifacts.
-3. Review `docs/methodology.md` for the engineering refactor decisions.
-4. Skim `projects/comfyui_workflows/README.md` for generative workflow breadth.
-5. Treat `projects/system_tools/README.md` as a small automation appendix.
+1. `projects/cv_wheat_disease/README.md`
+2. `projects/ml_training_pipeline/README.md`
+3. `projects/stats_variance_correlation_pipeline/README.md`
+4. `projects/comfyui_workflows/README.md`
+5. `docs/methodology.md`
 
-## Reproducibility Notes
+## Repository Structure
 
-This repository records original source paths in each README and documentation file. No existing source files were modified, no CSV/Excel/manifest files were changed, no metrics were recomputed, and no frozen figures were redrawn during consolidation.
+```text
+portfolio/
+|-- projects/
+|   |-- cv_wheat_disease/
+|   |-- ml_training_pipeline/
+|   |-- stats_variance_correlation_pipeline/
+|   |-- comfyui_workflows/
+|   |-- system_tools/
+|   `-- misc_tools/
+|-- assets/
+|   |-- images/
+|   |-- results/
+|   `-- diagrams/
+`-- docs/
+```
+
+## Reproducibility
+
+Each project includes its own README with the problem definition, method, implementation layout, run instructions, and output examples. Local absolute paths and private machine details are intentionally omitted from this cloud version.

@@ -2,8 +2,8 @@
 
 Source provenance:
 
-- Runtime path supplied by user: `C:\Program Files\AutoHotkey\v2\AutoHotkey64.exe`
-- Located user scripts: `D:\shiwanwuax\haiku4.5\AutoHotkey`
+- Runtime path supplied by user: `AutoHotkey v2 runtime`
+- Located user scripts: `<local-source>/system-tools/autohotkey`
 - Source CSV: none identified in this asset set
 
 ## Problem definition

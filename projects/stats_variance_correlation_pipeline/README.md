@@ -2,8 +2,8 @@
 
 Source provenance:
 
-- Scanned root: `D:\项目文件202605`
-- Primary source project root: `D:\项目文件202605\制图数据`
+- Scanned root: `<local-source>/historical-statistics`
+- Primary source project root: `<local-source>/stats-project`
 - Key historical scripts: see `source_asset_inventory.md`
 - Source CSV copied into this module: none
 - Reproducible demo CSV: `data/example_measurements.csv`
