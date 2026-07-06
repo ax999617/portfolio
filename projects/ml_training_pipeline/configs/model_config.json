@@ -1,0 +1,31 @@
+{
+  "source_root": "D:\\shiwanwuax",
+  "task": "3-class image recognition",
+  "classes": [
+    {
+      "id": 0,
+      "name": "luoyang_peony",
+      "source_hint": "reference_images/luoyang_peony_ref.jpg"
+    },
+    {
+      "id": 1,
+      "name": "zhengzhou_bronze_artifact",
+      "source_hint": "reference_images/zhengzhou_bronze_ref.jpg"
+    },
+    {
+      "id": 2,
+      "name": "xinyang_maojian_tea_plant",
+      "source_hint": "reference_images/xinyang_maojian_ref.jpg"
+    }
+  ],
+  "model": {
+    "architecture": "resnet18",
+    "num_classes": 3,
+    "source_file": "D:\\shiwanwuax\\trained.py"
+  },
+  "artifacts": {
+    "trained": "artifacts/weights/trained.pth",
+    "quantized": "artifacts/weights/quantized_model.pth",
+    "quantized_alt": "artifacts/weights/quantized.pth"
+  }
+}

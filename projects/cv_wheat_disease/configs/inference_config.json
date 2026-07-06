@@ -1,0 +1,20 @@
+{
+  "source_root": "D:\\202604竞赛项目",
+  "mode_default": "demo",
+  "real_model_mode": "model",
+  "classes": [
+    "healthy",
+    "stripe_rust",
+    "leaf_rust",
+    "powdery_mildew",
+    "fusarium"
+  ],
+  "response_contract": [
+    "class_id",
+    "confidence",
+    "mode",
+    "risk_level",
+    "knowledge"
+  ],
+  "notes": "The original backend has a model adapter hook but currently falls back to demo_rule_engine."
+}

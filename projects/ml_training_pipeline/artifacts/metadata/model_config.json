@@ -1,0 +1,14 @@
+{
+  "quantized": {
+    "module_path": "quantized",
+    "model_class": "QuantizedHenanModel",
+    "weight_file": "D:\\shiwanwuax\\model\\quantized_model.pth",
+    "description": "\u91cf\u5316\u6a21\u578b\uff08\u4f4e\u8d44\u6e90\u6d88\u8017\uff09"
+  },
+  "trained": {
+    "module_path": "trained",
+    "model_class": "UltimateHenanCNN",
+    "weight_file": "D:\\shiwanwuax\\model\\trained.pth",
+    "description": "\u5b8c\u6574\u8bad\u7ec3\u6a21\u578b\uff08\u9ad8\u7cbe\u5ea6\uff09"
+  }
+}
