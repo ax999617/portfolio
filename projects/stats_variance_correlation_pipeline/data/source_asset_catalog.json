@@ -10,9 +10,47 @@
       "statistical_plotting": 43,
       "pdf_report_generation": 41
     },
-    "data_boundary": "Historical CSV/Excel/SAV files were inventoried but not copied or modified.",
+    "data_boundary": "Clean source CSV files from data/clean are copied byte-for-byte into data/clean; Excel/SAV/manifest files are not modified.",
     "statistical_boundary": "Historical ANOVA, post-hoc tests, CLD letters, and frozen figures are not recomputed."
   },
+  "selected_source_datasets": [
+    {
+      "dataset_id": "soil_core_long_cn",
+      "title": "Soil core variables long table with original Chinese factor labels",
+      "source_relative_path": "data/clean/soil_core_variables_latest_long.csv",
+      "packaged_relative_path": "data/clean/soil_core_variables_latest_long.csv",
+      "table_shape": "long",
+      "notes": "Exact copied clean source CSV; not modified or recalculated.",
+      "original_source_path": "D:\\项目文件202605\\制图数据\\data\\clean\\soil_core_variables_latest_long.csv"
+    },
+    {
+      "dataset_id": "soil_core_long_v3",
+      "title": "Soil core variables long table with normalized factor labels",
+      "source_relative_path": "data/clean/soil_core_variables_latest_v3_long.csv",
+      "packaged_relative_path": "data/clean/soil_core_variables_latest_v3_long.csv",
+      "table_shape": "long",
+      "notes": "Exact copied clean source CSV; suitable for optional pipeline demonstrations.",
+      "original_source_path": "D:\\项目文件202605\\制图数据\\data\\clean\\soil_core_variables_latest_v3_long.csv"
+    },
+    {
+      "dataset_id": "soil_physicochemical_wide_cn",
+      "title": "Soil physicochemical wide table with original Chinese factor labels",
+      "source_relative_path": "data/clean/soil_physicochemical_latest_wide.csv",
+      "packaged_relative_path": "data/clean/soil_physicochemical_latest_wide.csv",
+      "table_shape": "wide",
+      "notes": "Exact copied clean source CSV containing NO3_N, NH4_N, N_availability, pH, and moisture fields.",
+      "original_source_path": "D:\\项目文件202605\\制图数据\\data\\clean\\soil_physicochemical_latest_wide.csv"
+    },
+    {
+      "dataset_id": "soil_physicochemical_wide_v3",
+      "title": "Soil physicochemical wide table with normalized factor labels",
+      "source_relative_path": "data/clean/soil_physicochemical_latest_v3_wide.csv",
+      "packaged_relative_path": "data/clean/soil_physicochemical_latest_v3_wide.csv",
+      "table_shape": "wide",
+      "notes": "Exact copied clean source CSV; recommended optional analysis input.",
+      "original_source_path": "D:\\项目文件202605\\制图数据\\data\\clean\\soil_physicochemical_latest_v3_wide.csv"
+    }
+  ],
   "selected_result_assets": [
     {
       "asset_id": "nh4n_research_pdf",

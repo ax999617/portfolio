@@ -26,6 +26,24 @@ class ResultAsset:
         return row
 
 
+@dataclass(frozen=True)
+class SourceDataset:
+    dataset_id: str
+    title: str
+    source_relative_path: str
+    packaged_relative_path: str
+    table_shape: str
+    notes: str
+
+    def source_path(self, source_root: Path) -> Path:
+        return source_root / self.source_relative_path
+
+    def as_json(self, source_root: Path) -> dict[str, str]:
+        row = asdict(self)
+        row["original_source_path"] = str(self.source_path(source_root))
+        return row
+
+
 SELECTED_RESULT_ASSETS: tuple[ResultAsset, ...] = (
     ResultAsset(
         asset_id="nh4n_research_pdf",
@@ -57,6 +75,42 @@ SELECTED_RESULT_ASSETS: tuple[ResultAsset, ...] = (
 )
 
 
+SELECTED_SOURCE_DATASETS: tuple[SourceDataset, ...] = (
+    SourceDataset(
+        dataset_id="soil_core_long_cn",
+        title="Soil core variables long table with original Chinese factor labels",
+        source_relative_path="data/clean/soil_core_variables_latest_long.csv",
+        packaged_relative_path="data/clean/soil_core_variables_latest_long.csv",
+        table_shape="long",
+        notes="Exact copied clean source CSV; not modified or recalculated.",
+    ),
+    SourceDataset(
+        dataset_id="soil_core_long_v3",
+        title="Soil core variables long table with normalized factor labels",
+        source_relative_path="data/clean/soil_core_variables_latest_v3_long.csv",
+        packaged_relative_path="data/clean/soil_core_variables_latest_v3_long.csv",
+        table_shape="long",
+        notes="Exact copied clean source CSV; suitable for optional pipeline demonstrations.",
+    ),
+    SourceDataset(
+        dataset_id="soil_physicochemical_wide_cn",
+        title="Soil physicochemical wide table with original Chinese factor labels",
+        source_relative_path="data/clean/soil_physicochemical_latest_wide.csv",
+        packaged_relative_path="data/clean/soil_physicochemical_latest_wide.csv",
+        table_shape="wide",
+        notes="Exact copied clean source CSV containing NO3_N, NH4_N, N_availability, pH, and moisture fields.",
+    ),
+    SourceDataset(
+        dataset_id="soil_physicochemical_wide_v3",
+        title="Soil physicochemical wide table with normalized factor labels",
+        source_relative_path="data/clean/soil_physicochemical_latest_v3_wide.csv",
+        packaged_relative_path="data/clean/soil_physicochemical_latest_v3_wide.csv",
+        table_shape="wide",
+        notes="Exact copied clean source CSV; recommended optional analysis input.",
+    ),
+)
+
+
 SOURCE_SCAN_SUMMARY = {
     "source_root": str(DEFAULT_SOURCE_ROOT),
     "first_party_effective_code_assets": 64,
@@ -68,7 +122,7 @@ SOURCE_SCAN_SUMMARY = {
         "statistical_plotting": 43,
         "pdf_report_generation": 41,
     },
-    "data_boundary": "Historical CSV/Excel/SAV files were inventoried but not copied or modified.",
+    "data_boundary": "Clean source CSV files from data/clean are copied byte-for-byte into data/clean; Excel/SAV/manifest files are not modified.",
     "statistical_boundary": "Historical ANOVA, post-hoc tests, CLD letters, and frozen figures are not recomputed.",
 }
 

@@ -7,7 +7,7 @@ import subprocess
 import tempfile
 from pathlib import Path
 
-from .catalog import REPRESENTATIVE_CODE_ASSETS, SELECTED_RESULT_ASSETS, SOURCE_SCAN_SUMMARY
+from .catalog import REPRESENTATIVE_CODE_ASSETS, SELECTED_RESULT_ASSETS, SELECTED_SOURCE_DATASETS, SOURCE_SCAN_SUMMARY
 
 
 def write_source_catalog(catalog_path: Path) -> Path:
@@ -15,6 +15,7 @@ def write_source_catalog(catalog_path: Path) -> Path:
     source_root = Path(SOURCE_SCAN_SUMMARY["source_root"])
     payload = {
         "summary": SOURCE_SCAN_SUMMARY,
+        "selected_source_datasets": [dataset.as_json(source_root) for dataset in SELECTED_SOURCE_DATASETS],
         "selected_result_assets": [asset.as_json(source_root) for asset in SELECTED_RESULT_ASSETS],
         "representative_code_assets": list(REPRESENTATIVE_CODE_ASSETS),
     }
@@ -102,7 +103,7 @@ def package_result_assets(
     render_previews: bool = True,
     refresh_reference_assets: bool = False,
 ) -> dict[str, object]:
-    reference_dir = project_root / "data" / "reference_assets" / "original"
+    reference_dir = project_root / "reference_results" / "original"
     original_dir = output_dir / "result_assets" / "original"
     preview_dir = output_dir / "result_assets" / "previews"
     log_dir = output_dir / "logs"
@@ -152,6 +153,7 @@ def package_result_assets(
         "boundaries": [
             "No historical CSV, Excel workbook, SAV file, manifest, CLD table, or frozen figure was modified.",
             "Frozen scientific PDFs were rendered only to PNG previews.",
+            "Clean source CSV copies live under data/clean and are not overwritten by the default run.",
             "Optional variance/correlation computation is available only for explicitly supplied new data.",
         ],
     }

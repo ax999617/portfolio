@@ -1,0 +1,385 @@
+SampleID,P,N,E,variable,value,label,unit,group
+W-N1-1,Wheat,50%,-E,TC_gkg,14.301609992981,TC,g kg^-1,core
+W-N1-1,Wheat,50%,-E,TN_gkg,0.527803227305412,TN,g kg^-1,core
+W-N1-1,Wheat,50%,-E,SOC_gkg,1.78457487751764,SOC,g kg^-1,core
+W-N1-1,Wheat,50%,-E,NO3_N,52.6927370531455,NO3-N,mg kg^-1,available_N
+W-N1-1,Wheat,50%,-E,NH4_N,32.787362600467,NH4-N,mg kg^-1,available_N
+W-N1-1,Wheat,50%,-E,N_availability,85.4800996536125,Available N,mg kg^-1,available_N
+W-N1-1,Wheat,50%,-E,pH,7.25,pH,,supplement
+W-N1-1,Wheat,50%,-E,Soil_moisture,7.04375667022412,Soil moisture,%,supplement
+W-N1-3,Wheat,50%,-E,TC_gkg,15.9806001186371,TC,g kg^-1,core
+W-N1-3,Wheat,50%,-E,TN_gkg,1.27231806516647,TN,g kg^-1,core
+W-N1-3,Wheat,50%,-E,SOC_gkg,0.820560149126071,SOC,g kg^-1,core
+W-N1-3,Wheat,50%,-E,NO3_N,42.7379122619837,NO3-N,mg kg^-1,available_N
+W-N1-3,Wheat,50%,-E,NH4_N,18.4839359839902,NH4-N,mg kg^-1,available_N
+W-N1-3,Wheat,50%,-E,N_availability,61.2218482459739,Available N,mg kg^-1,available_N
+W-N1-3,Wheat,50%,-E,pH,7.23,pH,,supplement
+W-N1-3,Wheat,50%,-E,Soil_moisture,21.1736237144586,Soil moisture,%,supplement
+W-N1-7,Wheat,50%,-E,TC_gkg,11.8988227844238,TC,g kg^-1,core
+W-N1-7,Wheat,50%,-E,TN_gkg,0.454978197813034,TN,g kg^-1,core
+W-N1-7,Wheat,50%,-E,SOC_gkg,1.07288670906712,SOC,g kg^-1,core
+W-N1-7,Wheat,50%,-E,NO3_N,55.5759706497192,NO3-N,mg kg^-1,available_N
+W-N1-7,Wheat,50%,-E,NH4_N,31.0768193244934,NH4-N,mg kg^-1,available_N
+W-N1-7,Wheat,50%,-E,N_availability,86.6527899742126,Available N,mg kg^-1,available_N
+W-N1-7,Wheat,50%,-E,pH,7.29,pH,,supplement
+W-N1-7,Wheat,50%,-E,Soil_moisture,11.2222222222222,Soil moisture,%,supplement
+W-N2-1,Wheat,100%,-E,TC_gkg,17.393285036087,TC,g kg^-1,core
+W-N2-1,Wheat,100%,-E,TN_gkg,0.635541826486588,TN,g kg^-1,core
+W-N2-1,Wheat,100%,-E,SOC_gkg,1.42083826474809,SOC,g kg^-1,core
+W-N2-1,Wheat,100%,-E,NO3_N,59.0225798150768,NO3-N,mg kg^-1,available_N
+W-N2-1,Wheat,100%,-E,NH4_N,26.9264576124109,NH4-N,mg kg^-1,available_N
+W-N2-1,Wheat,100%,-E,N_availability,85.9490374274876,Available N,mg kg^-1,available_N
+W-N2-1,Wheat,100%,-E,pH,7.15,pH,,supplement
+W-N2-1,Wheat,100%,-E,Soil_moisture,15.9420289855072,Soil moisture,%,supplement
+W-N2-3,Wheat,100%,-E,TC_gkg,18.2169651985168,TC,g kg^-1,core
+W-N2-3,Wheat,100%,-E,TN_gkg,0.673337280750275,TN,g kg^-1,core
+W-N2-3,Wheat,100%,-E,SOC_gkg,0.539746324458723,SOC,g kg^-1,core
+W-N2-3,Wheat,100%,-E,NO3_N,241.105691565842,NO3-N,mg kg^-1,available_N
+W-N2-3,Wheat,100%,-E,NH4_N,24.2062673021535,NH4-N,mg kg^-1,available_N
+W-N2-3,Wheat,100%,-E,N_availability,265.311958867995,Available N,mg kg^-1,available_N
+W-N2-3,Wheat,100%,-E,pH,7.33,pH,,supplement
+W-N2-3,Wheat,100%,-E,Soil_moisture,9.28961748633879,Soil moisture,%,supplement
+W-N2-7,Wheat,100%,-E,TC_gkg,17.2049415111542,TC,g kg^-1,core
+W-N2-7,Wheat,100%,-E,TN_gkg,0.524541214108467,TN,g kg^-1,core
+W-N2-7,Wheat,100%,-E,SOC_gkg,2.49960720312866,SOC,g kg^-1,core
+W-N2-7,Wheat,100%,-E,NO3_N,275.706461058838,NO3-N,mg kg^-1,available_N
+W-N2-7,Wheat,100%,-E,NH4_N,33.7395909490346,NH4-N,mg kg^-1,available_N
+W-N2-7,Wheat,100%,-E,N_availability,309.446052007873,Available N,mg kg^-1,available_N
+W-N2-7,Wheat,100%,-E,pH,7.22,pH,,supplement
+W-N2-7,Wheat,100%,-E,Soil_moisture,9.05125408942201,Soil moisture,%,supplement
+W-N3-1,Wheat,150%,-E,TC_gkg,15.4733026027679,TC,g kg^-1,core
+W-N3-1,Wheat,150%,-E,TN_gkg,0.602788329124451,TN,g kg^-1,core
+W-N3-1,Wheat,150%,-E,SOC_gkg,1.58368351648273,SOC,g kg^-1,core
+W-N3-1,Wheat,150%,-E,NO3_N,53.6498464819503,NO3-N,mg kg^-1,available_N
+W-N3-1,Wheat,150%,-E,NH4_N,2.75254656231567,NH4-N,mg kg^-1,available_N
+W-N3-1,Wheat,150%,-E,N_availability,56.402393044266,Available N,mg kg^-1,available_N
+W-N3-1,Wheat,150%,-E,pH,7.05,pH,,supplement
+W-N3-1,Wheat,150%,-E,Soil_moisture,9.58904109589041,Soil moisture,%,supplement
+W-N3-3,Wheat,150%,-E,TC_gkg,14.020129442215,TC,g kg^-1,core
+W-N3-3,Wheat,150%,-E,TN_gkg,0.443558506667614,TN,g kg^-1,core
+W-N3-3,Wheat,150%,-E,SOC_gkg,1.59362228833676,SOC,g kg^-1,core
+W-N3-3,Wheat,150%,-E,NO3_N,300.406795251565,NO3-N,mg kg^-1,available_N
+W-N3-3,Wheat,150%,-E,NH4_N,21.7882521113412,NH4-N,mg kg^-1,available_N
+W-N3-3,Wheat,150%,-E,N_availability,322.195047362906,Available N,mg kg^-1,available_N
+W-N3-3,Wheat,150%,-E,pH,7.39,pH,,supplement
+W-N3-3,Wheat,150%,-E,Soil_moisture,9.28961748633879,Soil moisture,%,supplement
+W-N3-7,Wheat,150%,-E,TC_gkg,16.831134557724,TC,g kg^-1,core
+W-N3-7,Wheat,150%,-E,TN_gkg,0.643720328807831,TN,g kg^-1,core
+W-N3-7,Wheat,150%,-E,SOC_gkg,1.18498458266258,SOC,g kg^-1,core
+W-N3-7,Wheat,150%,-E,NO3_N,44.9403586704046,NO3-N,mg kg^-1,available_N
+W-N3-7,Wheat,150%,-E,NH4_N,36.094129112741,NH4-N,mg kg^-1,available_N
+W-N3-7,Wheat,150%,-E,N_availability,81.0344877831456,Available N,mg kg^-1,available_N
+W-N3-7,Wheat,150%,-E,pH,7.26,pH,,supplement
+W-N3-7,Wheat,150%,-E,Soil_moisture,16.4144353899884,Soil moisture,%,supplement
+W-N4-1,Wheat,200%,-E,TC_gkg,21.1161708831787,TC,g kg^-1,core
+W-N4-1,Wheat,200%,-E,TN_gkg,0.677574053406715,TN,g kg^-1,core
+W-N4-1,Wheat,200%,-E,SOC_gkg,1.87903728057859,SOC,g kg^-1,core
+W-N4-1,Wheat,200%,-E,NO3_N,423.243865950885,NO3-N,mg kg^-1,available_N
+W-N4-1,Wheat,200%,-E,NH4_N,27.4302163627973,NH4-N,mg kg^-1,available_N
+W-N4-1,Wheat,200%,-E,N_availability,450.674082313682,Available N,mg kg^-1,available_N
+W-N4-1,Wheat,200%,-E,pH,7.08,pH,,supplement
+W-N4-1,Wheat,200%,-E,Soil_moisture,11.2347052280312,Soil moisture,%,supplement
+W-N4-3,Wheat,200%,-E,TC_gkg,15.7262170314789,TC,g kg^-1,core
+W-N4-3,Wheat,200%,-E,TN_gkg,0.726501643657684,TN,g kg^-1,core
+W-N4-3,Wheat,200%,-E,SOC_gkg,1.93156384210879,SOC,g kg^-1,core
+W-N4-3,Wheat,200%,-E,NO3_N,428.064826691699,NO3-N,mg kg^-1,available_N
+W-N4-3,Wheat,200%,-E,NH4_N,16.8804483892077,NH4-N,mg kg^-1,available_N
+W-N4-3,Wheat,200%,-E,N_availability,444.945275080906,Available N,mg kg^-1,available_N
+W-N4-3,Wheat,200%,-E,pH,7.03,pH,,supplement
+W-N4-3,Wheat,200%,-E,Soil_moisture,7.87486515641856,Soil moisture,%,supplement
+W-N4-7,Wheat,200%,-E,TC_gkg,17.8367972373962,TC,g kg^-1,core
+W-N4-7,Wheat,200%,-E,TN_gkg,0.602516233921051,TN,g kg^-1,core
+W-N4-7,Wheat,200%,-E,SOC_gkg,0.791148208954438,SOC,g kg^-1,core
+W-N4-7,Wheat,200%,-E,NO3_N,410.557740280817,NO3-N,mg kg^-1,available_N
+W-N4-7,Wheat,200%,-E,NH4_N,29.0705915275413,NH4-N,mg kg^-1,available_N
+W-N4-7,Wheat,200%,-E,N_availability,439.628331808358,Available N,mg kg^-1,available_N
+W-N4-7,Wheat,200%,-E,pH,7.3,pH,,supplement
+W-N4-7,Wheat,200%,-E,Soil_moisture,7.70059235325794,Soil moisture,%,supplement
+W-N1+E-1,Wheat,50%,+E,TC_gkg,16.9525587558746,TC,g kg^-1,core
+W-N1+E-1,Wheat,50%,+E,TN_gkg,0.562440678477287,TN,g kg^-1,core
+W-N1+E-1,Wheat,50%,+E,SOC_gkg,1.51569209828997,SOC,g kg^-1,core
+W-N1+E-1,Wheat,50%,+E,NO3_N,44.5877320515046,NO3-N,mg kg^-1,available_N
+W-N1+E-1,Wheat,50%,+E,NH4_N,27.0374065522938,NH4-N,mg kg^-1,available_N
+W-N1+E-1,Wheat,50%,+E,N_availability,71.6251386037984,Available N,mg kg^-1,available_N
+W-N1+E-1,Wheat,50%,+E,pH,7.28,pH,,supplement
+W-N1+E-1,Wheat,50%,+E,Soil_moisture,15.8748551564311,Soil moisture,%,supplement
+W-N1+E-6,Wheat,50%,+E,TC_gkg,14.6696841716766,TC,g kg^-1,core
+W-N1+E-6,Wheat,50%,+E,TN_gkg,0.541969537734985,TN,g kg^-1,core
+W-N1+E-6,Wheat,50%,+E,SOC_gkg,2.40877428999777,SOC,g kg^-1,core
+W-N1+E-6,Wheat,50%,+E,NO3_N,383.906737774627,NO3-N,mg kg^-1,available_N
+W-N1+E-6,Wheat,50%,+E,NH4_N,17.1731444096123,NH4-N,mg kg^-1,available_N
+W-N1+E-6,Wheat,50%,+E,N_availability,401.07988218424,Available N,mg kg^-1,available_N
+W-N1+E-6,Wheat,50%,+E,pH,7.22,pH,,supplement
+W-N1+E-6,Wheat,50%,+E,Soil_moisture,12.549240292628,Soil moisture,%,supplement
+W-N1+E-8,Wheat,50%,+E,TC_gkg,16.0178554058075,TC,g kg^-1,core
+W-N1+E-8,Wheat,50%,+E,TN_gkg,1.34735092520714,TN,g kg^-1,core
+W-N1+E-8,Wheat,50%,+E,SOC_gkg,1.70321750678647,SOC,g kg^-1,core
+W-N1+E-8,Wheat,50%,+E,NO3_N,48.4047255565551,NO3-N,mg kg^-1,available_N
+W-N1+E-8,Wheat,50%,+E,NH4_N,11.5276407407642,NH4-N,mg kg^-1,available_N
+W-N1+E-8,Wheat,50%,+E,N_availability,59.9323662973192,Available N,mg kg^-1,available_N
+W-N1+E-8,Wheat,50%,+E,pH,7.26,pH,,supplement
+W-N1+E-8,Wheat,50%,+E,Soil_moisture,15.3402537485582,Soil moisture,%,supplement
+W-N2+E-1,Wheat,100%,+E,TC_gkg,14.6037876605988,TC,g kg^-1,core
+W-N2+E-1,Wheat,100%,+E,TN_gkg,0.877320766448975,TN,g kg^-1,core
+W-N2+E-1,Wheat,100%,+E,SOC_gkg,1.93422031875966,SOC,g kg^-1,core
+W-N2+E-1,Wheat,100%,+E,NO3_N,58.5084195631056,NO3-N,mg kg^-1,available_N
+W-N2+E-1,Wheat,100%,+E,NH4_N,26.5116646948991,NH4-N,mg kg^-1,available_N
+W-N2+E-1,Wheat,100%,+E,N_availability,85.0200842580047,Available N,mg kg^-1,available_N
+W-N2+E-1,Wheat,100%,+E,pH,7.2,pH,,supplement
+W-N2+E-1,Wheat,100%,+E,Soil_moisture,14.4819690898684,Soil moisture,%,supplement
+W-N2+E-6,Wheat,100%,+E,TC_gkg,16.6130232810974,TC,g kg^-1,core
+W-N2+E-6,Wheat,100%,+E,TN_gkg,0.903457999229431,TN,g kg^-1,core
+W-N2+E-6,Wheat,100%,+E,SOC_gkg,1.89203571257508,SOC,g kg^-1,core
+W-N2+E-6,Wheat,100%,+E,NO3_N,427.237756596927,NO3-N,mg kg^-1,available_N
+W-N2+E-6,Wheat,100%,+E,NH4_N,16.5512089203144,NH4-N,mg kg^-1,available_N
+W-N2+E-6,Wheat,100%,+E,N_availability,443.788965517241,Available N,mg kg^-1,available_N
+W-N2+E-6,Wheat,100%,+E,pH,7.12,pH,,supplement
+W-N2+E-6,Wheat,100%,+E,Soil_moisture,17.5862069,Soil moisture,%,supplement
+W-N2+E-9,Wheat,100%,+E,TC_gkg,16.9245624542236,TC,g kg^-1,core
+W-N2+E-9,Wheat,100%,+E,TN_gkg,0.662416219711304,TN,g kg^-1,core
+W-N2+E-9,Wheat,100%,+E,SOC_gkg,1.68393376493953,SOC,g kg^-1,core
+W-N2+E-9,Wheat,100%,+E,NO3_N,53.5949832773419,NO3-N,mg kg^-1,available_N
+W-N2+E-9,Wheat,100%,+E,NH4_N,16.5136700590277,NH4-N,mg kg^-1,available_N
+W-N2+E-9,Wheat,100%,+E,N_availability,70.1086533363696,Available N,mg kg^-1,available_N
+W-N2+E-9,Wheat,100%,+E,pH,7.2,pH,,supplement
+W-N2+E-9,Wheat,100%,+E,Soil_moisture,10.1321585903083,Soil moisture,%,supplement
+W-N3+E-3,Wheat,150%,+E,TC_gkg,15.027539730072,TC,g kg^-1,core
+W-N3+E-3,Wheat,150%,+E,TN_gkg,0.638802796602249,TN,g kg^-1,core
+W-N3+E-3,Wheat,150%,+E,SOC_gkg,1.70651431962112,SOC,g kg^-1,core
+W-N3+E-3,Wheat,150%,+E,NO3_N,41.9009371228317,NO3-N,mg kg^-1,available_N
+W-N3+E-3,Wheat,150%,+E,NH4_N,23.7342946027082,NH4-N,mg kg^-1,available_N
+W-N3+E-3,Wheat,150%,+E,N_availability,65.63523172554,Available N,mg kg^-1,available_N
+W-N3+E-3,Wheat,150%,+E,pH,7.08,pH,,supplement
+W-N3+E-3,Wheat,150%,+E,Soil_moisture,18.6943620178042,Soil moisture,%,supplement
+W-N3+E-6,Wheat,150%,+E,TC_gkg,15.6706023216248,TC,g kg^-1,core
+W-N3+E-6,Wheat,150%,+E,TN_gkg,0.61352301388979,TN,g kg^-1,core
+W-N3+E-6,Wheat,150%,+E,SOC_gkg,1.36152792925883,SOC,g kg^-1,core
+W-N3+E-6,Wheat,150%,+E,NO3_N,40.8504060857436,NO3-N,mg kg^-1,available_N
+W-N3+E-6,Wheat,150%,+E,NH4_N,25.4676596417146,NH4-N,mg kg^-1,available_N
+W-N3+E-6,Wheat,150%,+E,N_availability,66.3180657274583,Available N,mg kg^-1,available_N
+W-N3+E-6,Wheat,150%,+E,pH,7.19,pH,,supplement
+W-N3+E-6,Wheat,150%,+E,Soil_moisture,17.6470588235294,Soil moisture,%,supplement
+W-N3+E-10,Wheat,150%,+E,TC_gkg,16.9381213188171,TC,g kg^-1,core
+W-N3+E-10,Wheat,150%,+E,TN_gkg,0.755683705210686,TN,g kg^-1,core
+W-N3+E-10,Wheat,150%,+E,SOC_gkg,1.07491470960899,SOC,g kg^-1,core
+W-N3+E-10,Wheat,150%,+E,NO3_N,423.42755272051,NO3-N,mg kg^-1,available_N
+W-N3+E-10,Wheat,150%,+E,NH4_N,21.5724472794898,NH4-N,mg kg^-1,available_N
+W-N3+E-10,Wheat,150%,+E,N_availability,445,Available N,mg kg^-1,available_N
+W-N3+E-10,Wheat,150%,+E,pH,7.15,pH,,supplement
+W-N3+E-10,Wheat,150%,+E,Soil_moisture,16.0092807424594,Soil moisture,%,supplement
+W-N4+E-2,Wheat,200%,+E,TC_gkg,19.0122151374817,TC,g kg^-1,core
+W-N4+E-2,Wheat,200%,+E,TN_gkg,1.88784390687943,TN,g kg^-1,core
+W-N4+E-2,Wheat,200%,+E,SOC_gkg,1.67846621498575,SOC,g kg^-1,core
+W-N4+E-2,Wheat,200%,+E,NO3_N,51.4489750228715,NO3-N,mg kg^-1,available_N
+W-N4+E-2,Wheat,200%,+E,NH4_N,18.47570096096,NH4-N,mg kg^-1,available_N
+W-N4+E-2,Wheat,200%,+E,N_availability,69.9246759838315,Available N,mg kg^-1,available_N
+W-N4+E-2,Wheat,200%,+E,pH,7.13,pH,,supplement
+W-N4+E-2,Wheat,200%,+E,Soil_moisture,15.0086256469235,Soil moisture,%,supplement
+W-N4+E-4,Wheat,200%,+E,TC_gkg,19.2588007450104,TC,g kg^-1,core
+W-N4+E-4,Wheat,200%,+E,TN_gkg,0.822389125823975,TN,g kg^-1,core
+W-N4+E-4,Wheat,200%,+E,SOC_gkg,2.0654362943797002,SOC,g kg^-1,core
+W-N4+E-4,Wheat,200%,+E,NO3_N,42.3855819884791,NO3-N,mg kg^-1,available_N
+W-N4+E-4,Wheat,200%,+E,NH4_N,26.8224069418876,NH4-N,mg kg^-1,available_N
+W-N4+E-4,Wheat,200%,+E,N_availability,69.2079889303668,Available N,mg kg^-1,available_N
+W-N4+E-4,Wheat,200%,+E,pH,7.19,pH,,supplement
+W-N4+E-4,Wheat,200%,+E,Soil_moisture,17.8550383028875,Soil moisture,%,supplement
+W-N4+E-7,Wheat,200%,+E,TC_gkg,22.3641657829285,TC,g kg^-1,core
+W-N4+E-7,Wheat,200%,+E,TN_gkg,0.923750698566437,TN,g kg^-1,core
+W-N4+E-7,Wheat,200%,+E,SOC_gkg,1.92939377518041,SOC,g kg^-1,core
+W-N4+E-7,Wheat,200%,+E,NO3_N,417.965908941513,NO3-N,mg kg^-1,available_N
+W-N4+E-7,Wheat,200%,+E,NH4_N,21.0237104356495,NH4-N,mg kg^-1,available_N
+W-N4+E-7,Wheat,200%,+E,N_availability,438.989619377163,Available N,mg kg^-1,available_N
+W-N4+E-7,Wheat,200%,+E,pH,7.21,pH,,supplement
+W-N4+E-7,Wheat,200%,+E,Soil_moisture,16.8396770472895,Soil moisture,%,supplement
+R-N1-11,Ryegrass,50%,-E,TC_gkg,15.1235949993134,TC,g kg^-1,core
+R-N1-11,Ryegrass,50%,-E,TN_gkg,0.506763532757759,TN,g kg^-1,core
+R-N1-11,Ryegrass,50%,-E,SOC_gkg,1.00954411625862,SOC,g kg^-1,core
+R-N1-11,Ryegrass,50%,-E,NO3_N,32.1487953929912,NO3-N,mg kg^-1,available_N
+R-N1-11,Ryegrass,50%,-E,NH4_N,12.7556907644497,NH4-N,mg kg^-1,available_N
+R-N1-11,Ryegrass,50%,-E,N_availability,44.9044861574409,Available N,mg kg^-1,available_N
+R-N1-11,Ryegrass,50%,-E,pH,7.25,pH,,supplement
+R-N1-11,Ryegrass,50%,-E,Soil_moisture,14.8765077541643,Soil moisture,%,supplement
+R-N1-13,Ryegrass,50%,-E,TC_gkg,15.5490601062775,TC,g kg^-1,core
+R-N1-13,Ryegrass,50%,-E,TN_gkg,0.550331473350525,TN,g kg^-1,core
+R-N1-13,Ryegrass,50%,-E,SOC_gkg,1.54783196335782,SOC,g kg^-1,core
+R-N1-13,Ryegrass,50%,-E,NO3_N,42.5456559203729,NO3-N,mg kg^-1,available_N
+R-N1-13,Ryegrass,50%,-E,NH4_N,13.1023513937077,NH4-N,mg kg^-1,available_N
+R-N1-13,Ryegrass,50%,-E,N_availability,55.6480073140806,Available N,mg kg^-1,available_N
+R-N1-13,Ryegrass,50%,-E,pH,7.31,pH,,supplement
+R-N1-13,Ryegrass,50%,-E,Soil_moisture,12.9848229342327,Soil moisture,%,supplement
+R-N1-17,Ryegrass,50%,-E,TC_gkg,17.2490990161896,TC,g kg^-1,core
+R-N1-17,Ryegrass,50%,-E,TN_gkg,0.524007380008698,TN,g kg^-1,core
+R-N1-17,Ryegrass,50%,-E,SOC_gkg,2.5613138531915,SOC,g kg^-1,core
+R-N1-17,Ryegrass,50%,-E,NO3_N,34.3489043023499,NO3-N,mg kg^-1,available_N
+R-N1-17,Ryegrass,50%,-E,NH4_N,8.31336887334271,NH4-N,mg kg^-1,available_N
+R-N1-17,Ryegrass,50%,-E,N_availability,42.6622731756926,Available N,mg kg^-1,available_N
+R-N1-17,Ryegrass,50%,-E,pH,7.35,pH,,supplement
+R-N1-17,Ryegrass,50%,-E,Soil_moisture,11.0188261351052,Soil moisture,%,supplement
+R-N2-11,Ryegrass,100%,-E,TC_gkg,16.4527499675751,TC,g kg^-1,core
+R-N2-11,Ryegrass,100%,-E,TN_gkg,0.577217973768711,TN,g kg^-1,core
+R-N2-11,Ryegrass,100%,-E,SOC_gkg,1.99711243693241,SOC,g kg^-1,core
+R-N2-11,Ryegrass,100%,-E,NO3_N,40.4010209456111,NO3-N,mg kg^-1,available_N
+R-N2-11,Ryegrass,100%,-E,NH4_N,18.5512700084852,NH4-N,mg kg^-1,available_N
+R-N2-11,Ryegrass,100%,-E,N_availability,58.9522909540962,Available N,mg kg^-1,available_N
+R-N2-11,Ryegrass,100%,-E,pH,7.12,pH,,supplement
+R-N2-11,Ryegrass,100%,-E,Soil_moisture,13.2999443516973,Soil moisture,%,supplement
+R-N2-13,Ryegrass,100%,-E,TC_gkg,16.7924213409424,TC,g kg^-1,core
+R-N2-13,Ryegrass,100%,-E,TN_gkg,0.635921284556389,TN,g kg^-1,core
+R-N2-13,Ryegrass,100%,-E,SOC_gkg,2.70020075934349,SOC,g kg^-1,core
+R-N2-13,Ryegrass,100%,-E,NO3_N,26.704494709057,NO3-N,mg kg^-1,available_N
+R-N2-13,Ryegrass,100%,-E,NH4_N,15.8246423021989,NH4-N,mg kg^-1,available_N
+R-N2-13,Ryegrass,100%,-E,N_availability,42.5291370112559,Available N,mg kg^-1,available_N
+R-N2-13,Ryegrass,100%,-E,pH,7.06,pH,,supplement
+R-N2-13,Ryegrass,100%,-E,Soil_moisture,16.211504938989,Soil moisture,%,supplement
+R-N2-17,Ryegrass,100%,-E,TC_gkg,16.5846645832062,TC,g kg^-1,core
+R-N2-17,Ryegrass,100%,-E,TN_gkg,0.800571441650391,TN,g kg^-1,core
+R-N2-17,Ryegrass,100%,-E,SOC_gkg,2.45238237175467,SOC,g kg^-1,core
+R-N2-17,Ryegrass,100%,-E,NO3_N,39.9715916354611,NO3-N,mg kg^-1,available_N
+R-N2-17,Ryegrass,100%,-E,NH4_N,11.1948974002588,NH4-N,mg kg^-1,available_N
+R-N2-17,Ryegrass,100%,-E,N_availability,51.1664890357199,Available N,mg kg^-1,available_N
+R-N2-17,Ryegrass,100%,-E,pH,7.38,pH,,supplement
+R-N2-17,Ryegrass,100%,-E,Soil_moisture,11.7352614015573,Soil moisture,%,supplement
+R-N3-11,Ryegrass,150%,-E,TC_gkg,20.5593729019165,TC,g kg^-1,core
+R-N3-11,Ryegrass,150%,-E,TN_gkg,0.806129574775696,TN,g kg^-1,core
+R-N3-11,Ryegrass,150%,-E,SOC_gkg,1.92281158523315,SOC,g kg^-1,core
+R-N3-11,Ryegrass,150%,-E,NO3_N,46.0033110162486,NO3-N,mg kg^-1,available_N
+R-N3-11,Ryegrass,150%,-E,NH4_N,14.3612872185914,NH4-N,mg kg^-1,available_N
+R-N3-11,Ryegrass,150%,-E,N_availability,60.3645982348401,Available N,mg kg^-1,available_N
+R-N3-11,Ryegrass,150%,-E,pH,7.05,pH,,supplement
+R-N3-11,Ryegrass,150%,-E,Soil_moisture,16.231884057971,Soil moisture,%,supplement
+R-N3-13,Ryegrass,150%,-E,TC_gkg,14.420473575592,TC,g kg^-1,core
+R-N3-13,Ryegrass,150%,-E,TN_gkg,0.697777271270752,TN,g kg^-1,core
+R-N3-13,Ryegrass,150%,-E,SOC_gkg,1.75593414650691,SOC,g kg^-1,core
+R-N3-13,Ryegrass,150%,-E,NO3_N,28.9483949221097,NO3-N,mg kg^-1,available_N
+R-N3-13,Ryegrass,150%,-E,NH4_N,16.9249388254606,NH4-N,mg kg^-1,available_N
+R-N3-13,Ryegrass,150%,-E,N_availability,45.8733337475703,Available N,mg kg^-1,available_N
+R-N3-13,Ryegrass,150%,-E,pH,7.03,pH,,supplement
+R-N3-13,Ryegrass,150%,-E,Soil_moisture,18.5897435897436,Soil moisture,%,supplement
+R-N3-17,Ryegrass,150%,-E,TC_gkg,13.7686097621918,TC,g kg^-1,core
+R-N3-17,Ryegrass,150%,-E,TN_gkg,0.563520640134811,TN,g kg^-1,core
+R-N3-17,Ryegrass,150%,-E,SOC_gkg,2.16460697883963,SOC,g kg^-1,core
+R-N3-17,Ryegrass,150%,-E,NO3_N,45.929042755718,NO3-N,mg kg^-1,available_N
+R-N3-17,Ryegrass,150%,-E,NH4_N,16.6848769564024,NH4-N,mg kg^-1,available_N
+R-N3-17,Ryegrass,150%,-E,N_availability,62.6139197121203,Available N,mg kg^-1,available_N
+R-N3-17,Ryegrass,150%,-E,pH,7.16,pH,,supplement
+R-N3-17,Ryegrass,150%,-E,Soil_moisture,13.2394366197183,Soil moisture,%,supplement
+R-N4-11,Ryegrass,200%,-E,TC_gkg,22.7115702629089,TC,g kg^-1,core
+R-N4-11,Ryegrass,200%,-E,TN_gkg,0.715996623039246,TN,g kg^-1,core
+R-N4-11,Ryegrass,200%,-E,SOC_gkg,2.27742796613996,SOC,g kg^-1,core
+R-N4-11,Ryegrass,200%,-E,NO3_N,35.4425486805889,NO3-N,mg kg^-1,available_N
+R-N4-11,Ryegrass,200%,-E,NH4_N,5.48481841150083,NH4-N,mg kg^-1,available_N
+R-N4-11,Ryegrass,200%,-E,N_availability,40.9273670920897,Available N,mg kg^-1,available_N
+R-N4-11,Ryegrass,200%,-E,pH,7.09,pH,,supplement
+R-N4-11,Ryegrass,200%,-E,Soil_moisture,13.1861912846633,Soil moisture,%,supplement
+R-N4-13,Ryegrass,200%,-E,TC_gkg,17.3894941806793,TC,g kg^-1,core
+R-N4-13,Ryegrass,200%,-E,TN_gkg,0.744672045111656,TN,g kg^-1,core
+R-N4-13,Ryegrass,200%,-E,SOC_gkg,3.1125528216362,SOC,g kg^-1,core
+R-N4-13,Ryegrass,200%,-E,NO3_N,48.4084726479512,NO3-N,mg kg^-1,available_N
+R-N4-13,Ryegrass,200%,-E,NH4_N,9.1572563646883,NH4-N,mg kg^-1,available_N
+R-N4-13,Ryegrass,200%,-E,N_availability,57.5657290126395,Available N,mg kg^-1,available_N
+R-N4-13,Ryegrass,200%,-E,pH,7.04,pH,,supplement
+R-N4-13,Ryegrass,200%,-E,Soil_moisture,12.4859392575928,Soil moisture,%,supplement
+R-N4-17,Ryegrass,200%,-E,TC_gkg,17.4442303180695,TC,g kg^-1,core
+R-N4-17,Ryegrass,200%,-E,TN_gkg,0.608893856406212,TN,g kg^-1,core
+R-N4-17,Ryegrass,200%,-E,SOC_gkg,2.64120006254459,SOC,g kg^-1,core
+R-N4-17,Ryegrass,200%,-E,NO3_N,33.7476301632949,NO3-N,mg kg^-1,available_N
+R-N4-17,Ryegrass,200%,-E,NH4_N,12.8206880146598,NH4-N,mg kg^-1,available_N
+R-N4-17,Ryegrass,200%,-E,N_availability,46.5683181779547,Available N,mg kg^-1,available_N
+R-N4-17,Ryegrass,200%,-E,pH,7.18,pH,,supplement
+R-N4-17,Ryegrass,200%,-E,Soil_moisture,12.0927664273882,Soil moisture,%,supplement
+R-N1+E-16,Ryegrass,50%,+E,TC_gkg,13.5889780521393,TC,g kg^-1,core
+R-N1+E-16,Ryegrass,50%,+E,TN_gkg,1.70926138758659,TN,g kg^-1,core
+R-N1+E-16,Ryegrass,50%,+E,SOC_gkg,1.49330106960137,SOC,g kg^-1,core
+R-N1+E-16,Ryegrass,50%,+E,NO3_N,51.5803973064796,NO3-N,mg kg^-1,available_N
+R-N1+E-16,Ryegrass,50%,+E,NH4_N,8.61001917537223,NH4-N,mg kg^-1,available_N
+R-N1+E-16,Ryegrass,50%,+E,N_availability,60.1904164818518,Available N,mg kg^-1,available_N
+R-N1+E-16,Ryegrass,50%,+E,pH,7.12,pH,,supplement
+R-N1+E-16,Ryegrass,50%,+E,Soil_moisture,26.4687302590019,Soil moisture,%,supplement
+R-N1+E-17,Ryegrass,50%,+E,TC_gkg,12.9006361961365,TC,g kg^-1,core
+R-N1+E-17,Ryegrass,50%,+E,TN_gkg,1.56297504901886,TN,g kg^-1,core
+R-N1+E-17,Ryegrass,50%,+E,SOC_gkg,1.6149338739868,SOC,g kg^-1,core
+R-N1+E-17,Ryegrass,50%,+E,NO3_N,35.7963742138358,NO3-N,mg kg^-1,available_N
+R-N1+E-17,Ryegrass,50%,+E,NH4_N,5.96050549444031,NH4-N,mg kg^-1,available_N
+R-N1+E-17,Ryegrass,50%,+E,N_availability,41.7568797082761,Available N,mg kg^-1,available_N
+R-N1+E-17,Ryegrass,50%,+E,pH,7.09,pH,,supplement
+R-N1+E-17,Ryegrass,50%,+E,Soil_moisture,17.7058823529412,Soil moisture,%,supplement
+R-N1+E-20,Ryegrass,50%,+E,TC_gkg,13.4590864181519,TC,g kg^-1,core
+R-N1+E-20,Ryegrass,50%,+E,TN_gkg,0.900365263223648,TN,g kg^-1,core
+R-N1+E-20,Ryegrass,50%,+E,SOC_gkg,1.99477615274723,SOC,g kg^-1,core
+R-N1+E-20,Ryegrass,50%,+E,NO3_N,52.1662408565653,NO3-N,mg kg^-1,available_N
+R-N1+E-20,Ryegrass,50%,+E,NH4_N,8.82829677409571,NH4-N,mg kg^-1,available_N
+R-N1+E-20,Ryegrass,50%,+E,N_availability,60.994537630661,Available N,mg kg^-1,available_N
+R-N1+E-20,Ryegrass,50%,+E,pH,7.16,pH,,supplement
+R-N1+E-20,Ryegrass,50%,+E,Soil_moisture,21.2946158499697,Soil moisture,%,supplement
+R-N2+E-12,Ryegrass,100%,+E,TC_gkg,18.2189762592316,TC,g kg^-1,core
+R-N2+E-12,Ryegrass,100%,+E,TN_gkg,0.704611912369728,TN,g kg^-1,core
+R-N2+E-12,Ryegrass,100%,+E,SOC_gkg,2.73256557631362,SOC,g kg^-1,core
+R-N2+E-12,Ryegrass,100%,+E,NO3_N,27.4700728293496,NO3-N,mg kg^-1,available_N
+R-N2+E-12,Ryegrass,100%,+E,NH4_N,10.3603674135972,NH4-N,mg kg^-1,available_N
+R-N2+E-12,Ryegrass,100%,+E,N_availability,37.8304402429468,Available N,mg kg^-1,available_N
+R-N2+E-12,Ryegrass,100%,+E,pH,7.02,pH,,supplement
+R-N2+E-12,Ryegrass,100%,+E,Soil_moisture,16.144018583043,Soil moisture,%,supplement
+R-N2+E-15,Ryegrass,100%,+E,TC_gkg,18.2238793373108,TC,g kg^-1,core
+R-N2+E-15,Ryegrass,100%,+E,TN_gkg,0.722729489207268,TN,g kg^-1,core
+R-N2+E-15,Ryegrass,100%,+E,SOC_gkg,1.64803443435699,SOC,g kg^-1,core
+R-N2+E-15,Ryegrass,100%,+E,NO3_N,27.915357851404,NO3-N,mg kg^-1,available_N
+R-N2+E-15,Ryegrass,100%,+E,NH4_N,9.50011309119528,NH4-N,mg kg^-1,available_N
+R-N2+E-15,Ryegrass,100%,+E,N_availability,37.4154709425993,Available N,mg kg^-1,available_N
+R-N2+E-15,Ryegrass,100%,+E,pH,7.18,pH,,supplement
+R-N2+E-15,Ryegrass,100%,+E,Soil_moisture,18.8645771732703,Soil moisture,%,supplement
+R-N2+E-19,Ryegrass,100%,+E,TC_gkg,17.4627661705017,TC,g kg^-1,core
+R-N2+E-19,Ryegrass,100%,+E,TN_gkg,1.31427749991417,TN,g kg^-1,core
+R-N2+E-19,Ryegrass,100%,+E,SOC_gkg,1.92220676170523,SOC,g kg^-1,core
+R-N2+E-19,Ryegrass,100%,+E,NO3_N,38.9006529940405,NO3-N,mg kg^-1,available_N
+R-N2+E-19,Ryegrass,100%,+E,NH4_N,6.13210445557625,NH4-N,mg kg^-1,available_N
+R-N2+E-19,Ryegrass,100%,+E,N_availability,45.0327574496168,Available N,mg kg^-1,available_N
+R-N2+E-19,Ryegrass,100%,+E,pH,7.06,pH,,supplement
+R-N2+E-19,Ryegrass,100%,+E,Soil_moisture,19.2170818505338,Soil moisture,%,supplement
+R-N3+E-11,Ryegrass,150%,+E,TC_gkg,15.7100474834442,TC,g kg^-1,core
+R-N3+E-11,Ryegrass,150%,+E,TN_gkg,0.648259073495865,TN,g kg^-1,core
+R-N3+E-11,Ryegrass,150%,+E,SOC_gkg,2.07041713051208,SOC,g kg^-1,core
+R-N3+E-11,Ryegrass,150%,+E,NO3_N,52.10705382124,NO3-N,mg kg^-1,available_N
+R-N3+E-11,Ryegrass,150%,+E,NH4_N,5.76132959523879,NH4-N,mg kg^-1,available_N
+R-N3+E-11,Ryegrass,150%,+E,N_availability,57.8683834164788,Available N,mg kg^-1,available_N
+R-N3+E-11,Ryegrass,150%,+E,pH,7.15,pH,,supplement
+R-N3+E-11,Ryegrass,150%,+E,Soil_moisture,15.0802752293578,Soil moisture,%,supplement
+R-N3+E-13,Ryegrass,150%,+E,TC_gkg,14.1707527637482,TC,g kg^-1,core
+R-N3+E-13,Ryegrass,150%,+E,TN_gkg,1.28992408514023,TN,g kg^-1,core
+R-N3+E-13,Ryegrass,150%,+E,SOC_gkg,0.996913801033443,SOC,g kg^-1,core
+R-N3+E-13,Ryegrass,150%,+E,NO3_N,23.3203225456067,NO3-N,mg kg^-1,available_N
+R-N3+E-13,Ryegrass,150%,+E,NH4_N,14.1862414594907,NH4-N,mg kg^-1,available_N
+R-N3+E-13,Ryegrass,150%,+E,N_availability,37.5065640050974,Available N,mg kg^-1,available_N
+R-N3+E-13,Ryegrass,150%,+E,pH,7.18,pH,,supplement
+R-N3+E-13,Ryegrass,150%,+E,Soil_moisture,19.4029850746269,Soil moisture,%,supplement
+R-N3+E-15,Ryegrass,150%,+E,TC_gkg,15.5908942222595,TC,g kg^-1,core
+R-N3+E-15,Ryegrass,150%,+E,TN_gkg,0.78883983194828,TN,g kg^-1,core
+R-N3+E-15,Ryegrass,150%,+E,SOC_gkg,2.34557400941849,SOC,g kg^-1,core
+R-N3+E-15,Ryegrass,150%,+E,NO3_N,48.3675725851883,NO3-N,mg kg^-1,available_N
+R-N3+E-15,Ryegrass,150%,+E,NH4_N,10.4900027636366,NH4-N,mg kg^-1,available_N
+R-N3+E-15,Ryegrass,150%,+E,N_availability,58.8575753488249,Available N,mg kg^-1,available_N
+R-N3+E-15,Ryegrass,150%,+E,pH,7.18,pH,,supplement
+R-N3+E-15,Ryegrass,150%,+E,Soil_moisture,12.2562674094707,Soil moisture,%,supplement
+R-N4+E-12,Ryegrass,200%,+E,TC_gkg,15.9988749027252,TC,g kg^-1,core
+R-N4+E-12,Ryegrass,200%,+E,TN_gkg,0.690933018922806,TN,g kg^-1,core
+R-N4+E-12,Ryegrass,200%,+E,SOC_gkg,2.09012821408773,SOC,g kg^-1,core
+R-N4+E-12,Ryegrass,200%,+E,NO3_N,57.8044576973751,NO3-N,mg kg^-1,available_N
+R-N4+E-12,Ryegrass,200%,+E,NH4_N,5.78691046813439,NH4-N,mg kg^-1,available_N
+R-N4+E-12,Ryegrass,200%,+E,N_availability,63.5913681655095,Available N,mg kg^-1,available_N
+R-N4+E-12,Ryegrass,200%,+E,pH,7.31,pH,,supplement
+R-N4+E-12,Ryegrass,200%,+E,Soil_moisture,15.5172413793104,Soil moisture,%,supplement
+R-N4+E-13,Ryegrass,200%,+E,TC_gkg,16.6016912460327,TC,g kg^-1,core
+R-N4+E-13,Ryegrass,200%,+E,TN_gkg,1.3029870390892,TN,g kg^-1,core
+R-N4+E-13,Ryegrass,200%,+E,SOC_gkg,1.51184955154724,SOC,g kg^-1,core
+R-N4+E-13,Ryegrass,200%,+E,NO3_N,44.2646686001068,NO3-N,mg kg^-1,available_N
+R-N4+E-13,Ryegrass,200%,+E,NH4_N,5.58866787872714,NH4-N,mg kg^-1,available_N
+R-N4+E-13,Ryegrass,200%,+E,N_availability,49.853336478834,Available N,mg kg^-1,available_N
+R-N4+E-13,Ryegrass,200%,+E,pH,7.03,pH,,supplement
+R-N4+E-13,Ryegrass,200%,+E,Soil_moisture,16.4144353899884,Soil moisture,%,supplement
+R-N4+E-20,Ryegrass,200%,+E,TC_gkg,15.4808187484741,TC,g kg^-1,core
+R-N4+E-20,Ryegrass,200%,+E,TN_gkg,1.02566465735435,TN,g kg^-1,core
+R-N4+E-20,Ryegrass,200%,+E,SOC_gkg,2.09860791545189,SOC,g kg^-1,core
+R-N4+E-20,Ryegrass,200%,+E,NO3_N,42.6974806439402,NO3-N,mg kg^-1,available_N
+R-N4+E-20,Ryegrass,200%,+E,NH4_N,8.89823510607737,NH4-N,mg kg^-1,available_N
+R-N4+E-20,Ryegrass,200%,+E,N_availability,51.5957157500176,Available N,mg kg^-1,available_N
+R-N4+E-20,Ryegrass,200%,+E,pH,7.03,pH,,supplement
+R-N4+E-20,Ryegrass,200%,+E,Soil_moisture,21.1943793911007,Soil moisture,%,supplement

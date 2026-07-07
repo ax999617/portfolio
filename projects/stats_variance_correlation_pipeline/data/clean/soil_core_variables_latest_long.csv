@@ -1,0 +1,385 @@
+SampleID,作物,氮水平,蚯蚓处理,variable,variable_label,value,unit,variable_group
+W-N1-1,小麦,50%氮肥,不加蚯蚓,TC_gkg,TC,14.301609992981,g kg^-1,C_N_pool
+W-N1-1,小麦,50%氮肥,不加蚯蚓,TN_gkg,TN,0.527803227305412,g kg^-1,C_N_pool
+W-N1-1,小麦,50%氮肥,不加蚯蚓,SOC_gkg,SOC,1.78457487751764,g kg^-1,C_N_pool
+W-N1-1,小麦,50%氮肥,不加蚯蚓,NO3_N,NO3--N,52.6927370531455,mg kg^-1,available_N
+W-N1-1,小麦,50%氮肥,不加蚯蚓,NH4_N,NH4+-N,32.787362600467,mg kg^-1,available_N
+W-N1-1,小麦,50%氮肥,不加蚯蚓,N_availability,Available N,85.4800996536125,mg kg^-1,available_N
+W-N1-1,小麦,50%氮肥,不加蚯蚓,pH,pH,7.25,none,supplement
+W-N1-1,小麦,50%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,7.04375667022412,%,supplement
+W-N1-3,小麦,50%氮肥,不加蚯蚓,TC_gkg,TC,15.9806001186371,g kg^-1,C_N_pool
+W-N1-3,小麦,50%氮肥,不加蚯蚓,TN_gkg,TN,1.27231806516647,g kg^-1,C_N_pool
+W-N1-3,小麦,50%氮肥,不加蚯蚓,SOC_gkg,SOC,0.820560149126071,g kg^-1,C_N_pool
+W-N1-3,小麦,50%氮肥,不加蚯蚓,NO3_N,NO3--N,42.7379122619837,mg kg^-1,available_N
+W-N1-3,小麦,50%氮肥,不加蚯蚓,NH4_N,NH4+-N,18.4839359839902,mg kg^-1,available_N
+W-N1-3,小麦,50%氮肥,不加蚯蚓,N_availability,Available N,61.2218482459739,mg kg^-1,available_N
+W-N1-3,小麦,50%氮肥,不加蚯蚓,pH,pH,7.23,none,supplement
+W-N1-3,小麦,50%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,21.1736237144586,%,supplement
+W-N1-7,小麦,50%氮肥,不加蚯蚓,TC_gkg,TC,11.8988227844238,g kg^-1,C_N_pool
+W-N1-7,小麦,50%氮肥,不加蚯蚓,TN_gkg,TN,0.454978197813034,g kg^-1,C_N_pool
+W-N1-7,小麦,50%氮肥,不加蚯蚓,SOC_gkg,SOC,1.07288670906712,g kg^-1,C_N_pool
+W-N1-7,小麦,50%氮肥,不加蚯蚓,NO3_N,NO3--N,55.5759706497192,mg kg^-1,available_N
+W-N1-7,小麦,50%氮肥,不加蚯蚓,NH4_N,NH4+-N,31.0768193244934,mg kg^-1,available_N
+W-N1-7,小麦,50%氮肥,不加蚯蚓,N_availability,Available N,86.6527899742126,mg kg^-1,available_N
+W-N1-7,小麦,50%氮肥,不加蚯蚓,pH,pH,7.29,none,supplement
+W-N1-7,小麦,50%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,11.2222222222222,%,supplement
+W-N2-1,小麦,100%氮肥,不加蚯蚓,TC_gkg,TC,17.393285036087,g kg^-1,C_N_pool
+W-N2-1,小麦,100%氮肥,不加蚯蚓,TN_gkg,TN,0.635541826486588,g kg^-1,C_N_pool
+W-N2-1,小麦,100%氮肥,不加蚯蚓,SOC_gkg,SOC,1.42083826474809,g kg^-1,C_N_pool
+W-N2-1,小麦,100%氮肥,不加蚯蚓,NO3_N,NO3--N,59.0225798150768,mg kg^-1,available_N
+W-N2-1,小麦,100%氮肥,不加蚯蚓,NH4_N,NH4+-N,26.9264576124109,mg kg^-1,available_N
+W-N2-1,小麦,100%氮肥,不加蚯蚓,N_availability,Available N,85.9490374274876,mg kg^-1,available_N
+W-N2-1,小麦,100%氮肥,不加蚯蚓,pH,pH,7.15,none,supplement
+W-N2-1,小麦,100%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,15.9420289855072,%,supplement
+W-N2-3,小麦,100%氮肥,不加蚯蚓,TC_gkg,TC,18.2169651985168,g kg^-1,C_N_pool
+W-N2-3,小麦,100%氮肥,不加蚯蚓,TN_gkg,TN,0.673337280750275,g kg^-1,C_N_pool
+W-N2-3,小麦,100%氮肥,不加蚯蚓,SOC_gkg,SOC,0.539746324458723,g kg^-1,C_N_pool
+W-N2-3,小麦,100%氮肥,不加蚯蚓,NO3_N,NO3--N,241.105691565842,mg kg^-1,available_N
+W-N2-3,小麦,100%氮肥,不加蚯蚓,NH4_N,NH4+-N,24.2062673021535,mg kg^-1,available_N
+W-N2-3,小麦,100%氮肥,不加蚯蚓,N_availability,Available N,265.311958867995,mg kg^-1,available_N
+W-N2-3,小麦,100%氮肥,不加蚯蚓,pH,pH,7.33,none,supplement
+W-N2-3,小麦,100%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,9.28961748633879,%,supplement
+W-N2-7,小麦,100%氮肥,不加蚯蚓,TC_gkg,TC,17.2049415111542,g kg^-1,C_N_pool
+W-N2-7,小麦,100%氮肥,不加蚯蚓,TN_gkg,TN,0.524541214108467,g kg^-1,C_N_pool
+W-N2-7,小麦,100%氮肥,不加蚯蚓,SOC_gkg,SOC,2.49960720312866,g kg^-1,C_N_pool
+W-N2-7,小麦,100%氮肥,不加蚯蚓,NO3_N,NO3--N,275.706461058838,mg kg^-1,available_N
+W-N2-7,小麦,100%氮肥,不加蚯蚓,NH4_N,NH4+-N,33.7395909490346,mg kg^-1,available_N
+W-N2-7,小麦,100%氮肥,不加蚯蚓,N_availability,Available N,309.446052007873,mg kg^-1,available_N
+W-N2-7,小麦,100%氮肥,不加蚯蚓,pH,pH,7.22,none,supplement
+W-N2-7,小麦,100%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,9.05125408942201,%,supplement
+W-N3-1,小麦,150%氮肥,不加蚯蚓,TC_gkg,TC,15.4733026027679,g kg^-1,C_N_pool
+W-N3-1,小麦,150%氮肥,不加蚯蚓,TN_gkg,TN,0.602788329124451,g kg^-1,C_N_pool
+W-N3-1,小麦,150%氮肥,不加蚯蚓,SOC_gkg,SOC,1.58368351648273,g kg^-1,C_N_pool
+W-N3-1,小麦,150%氮肥,不加蚯蚓,NO3_N,NO3--N,53.6498464819503,mg kg^-1,available_N
+W-N3-1,小麦,150%氮肥,不加蚯蚓,NH4_N,NH4+-N,2.75254656231567,mg kg^-1,available_N
+W-N3-1,小麦,150%氮肥,不加蚯蚓,N_availability,Available N,56.402393044266,mg kg^-1,available_N
+W-N3-1,小麦,150%氮肥,不加蚯蚓,pH,pH,7.05,none,supplement
+W-N3-1,小麦,150%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,9.58904109589041,%,supplement
+W-N3-3,小麦,150%氮肥,不加蚯蚓,TC_gkg,TC,14.020129442215,g kg^-1,C_N_pool
+W-N3-3,小麦,150%氮肥,不加蚯蚓,TN_gkg,TN,0.443558506667614,g kg^-1,C_N_pool
+W-N3-3,小麦,150%氮肥,不加蚯蚓,SOC_gkg,SOC,1.59362228833676,g kg^-1,C_N_pool
+W-N3-3,小麦,150%氮肥,不加蚯蚓,NO3_N,NO3--N,300.406795251565,mg kg^-1,available_N
+W-N3-3,小麦,150%氮肥,不加蚯蚓,NH4_N,NH4+-N,21.7882521113412,mg kg^-1,available_N
+W-N3-3,小麦,150%氮肥,不加蚯蚓,N_availability,Available N,322.195047362906,mg kg^-1,available_N
+W-N3-3,小麦,150%氮肥,不加蚯蚓,pH,pH,7.39,none,supplement
+W-N3-3,小麦,150%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,9.28961748633879,%,supplement
+W-N3-7,小麦,150%氮肥,不加蚯蚓,TC_gkg,TC,16.831134557724,g kg^-1,C_N_pool
+W-N3-7,小麦,150%氮肥,不加蚯蚓,TN_gkg,TN,0.643720328807831,g kg^-1,C_N_pool
+W-N3-7,小麦,150%氮肥,不加蚯蚓,SOC_gkg,SOC,1.18498458266258,g kg^-1,C_N_pool
+W-N3-7,小麦,150%氮肥,不加蚯蚓,NO3_N,NO3--N,44.9403586704046,mg kg^-1,available_N
+W-N3-7,小麦,150%氮肥,不加蚯蚓,NH4_N,NH4+-N,36.094129112741,mg kg^-1,available_N
+W-N3-7,小麦,150%氮肥,不加蚯蚓,N_availability,Available N,81.0344877831456,mg kg^-1,available_N
+W-N3-7,小麦,150%氮肥,不加蚯蚓,pH,pH,7.26,none,supplement
+W-N3-7,小麦,150%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,16.4144353899884,%,supplement
+W-N4-1,小麦,200%氮肥,不加蚯蚓,TC_gkg,TC,21.1161708831787,g kg^-1,C_N_pool
+W-N4-1,小麦,200%氮肥,不加蚯蚓,TN_gkg,TN,0.677574053406715,g kg^-1,C_N_pool
+W-N4-1,小麦,200%氮肥,不加蚯蚓,SOC_gkg,SOC,1.87903728057859,g kg^-1,C_N_pool
+W-N4-1,小麦,200%氮肥,不加蚯蚓,NO3_N,NO3--N,423.243865950885,mg kg^-1,available_N
+W-N4-1,小麦,200%氮肥,不加蚯蚓,NH4_N,NH4+-N,27.4302163627973,mg kg^-1,available_N
+W-N4-1,小麦,200%氮肥,不加蚯蚓,N_availability,Available N,450.674082313682,mg kg^-1,available_N
+W-N4-1,小麦,200%氮肥,不加蚯蚓,pH,pH,7.08,none,supplement
+W-N4-1,小麦,200%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,11.2347052280312,%,supplement
+W-N4-3,小麦,200%氮肥,不加蚯蚓,TC_gkg,TC,15.7262170314789,g kg^-1,C_N_pool
+W-N4-3,小麦,200%氮肥,不加蚯蚓,TN_gkg,TN,0.726501643657684,g kg^-1,C_N_pool
+W-N4-3,小麦,200%氮肥,不加蚯蚓,SOC_gkg,SOC,1.93156384210879,g kg^-1,C_N_pool
+W-N4-3,小麦,200%氮肥,不加蚯蚓,NO3_N,NO3--N,428.064826691699,mg kg^-1,available_N
+W-N4-3,小麦,200%氮肥,不加蚯蚓,NH4_N,NH4+-N,16.8804483892077,mg kg^-1,available_N
+W-N4-3,小麦,200%氮肥,不加蚯蚓,N_availability,Available N,444.945275080906,mg kg^-1,available_N
+W-N4-3,小麦,200%氮肥,不加蚯蚓,pH,pH,7.03,none,supplement
+W-N4-3,小麦,200%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,7.87486515641856,%,supplement
+W-N4-7,小麦,200%氮肥,不加蚯蚓,TC_gkg,TC,17.8367972373962,g kg^-1,C_N_pool
+W-N4-7,小麦,200%氮肥,不加蚯蚓,TN_gkg,TN,0.602516233921051,g kg^-1,C_N_pool
+W-N4-7,小麦,200%氮肥,不加蚯蚓,SOC_gkg,SOC,0.791148208954438,g kg^-1,C_N_pool
+W-N4-7,小麦,200%氮肥,不加蚯蚓,NO3_N,NO3--N,410.557740280817,mg kg^-1,available_N
+W-N4-7,小麦,200%氮肥,不加蚯蚓,NH4_N,NH4+-N,29.0705915275413,mg kg^-1,available_N
+W-N4-7,小麦,200%氮肥,不加蚯蚓,N_availability,Available N,439.628331808358,mg kg^-1,available_N
+W-N4-7,小麦,200%氮肥,不加蚯蚓,pH,pH,7.3,none,supplement
+W-N4-7,小麦,200%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,7.70059235325794,%,supplement
+W-N1+E-1,小麦,50%氮肥,加蚯蚓,TC_gkg,TC,16.9525587558746,g kg^-1,C_N_pool
+W-N1+E-1,小麦,50%氮肥,加蚯蚓,TN_gkg,TN,0.562440678477287,g kg^-1,C_N_pool
+W-N1+E-1,小麦,50%氮肥,加蚯蚓,SOC_gkg,SOC,1.51569209828997,g kg^-1,C_N_pool
+W-N1+E-1,小麦,50%氮肥,加蚯蚓,NO3_N,NO3--N,44.5877320515046,mg kg^-1,available_N
+W-N1+E-1,小麦,50%氮肥,加蚯蚓,NH4_N,NH4+-N,27.0374065522938,mg kg^-1,available_N
+W-N1+E-1,小麦,50%氮肥,加蚯蚓,N_availability,Available N,71.6251386037984,mg kg^-1,available_N
+W-N1+E-1,小麦,50%氮肥,加蚯蚓,pH,pH,7.28,none,supplement
+W-N1+E-1,小麦,50%氮肥,加蚯蚓,Soil_moisture,Soil moisture,15.8748551564311,%,supplement
+W-N1+E-6,小麦,50%氮肥,加蚯蚓,TC_gkg,TC,14.6696841716766,g kg^-1,C_N_pool
+W-N1+E-6,小麦,50%氮肥,加蚯蚓,TN_gkg,TN,0.541969537734985,g kg^-1,C_N_pool
+W-N1+E-6,小麦,50%氮肥,加蚯蚓,SOC_gkg,SOC,2.40877428999777,g kg^-1,C_N_pool
+W-N1+E-6,小麦,50%氮肥,加蚯蚓,NO3_N,NO3--N,383.906737774627,mg kg^-1,available_N
+W-N1+E-6,小麦,50%氮肥,加蚯蚓,NH4_N,NH4+-N,17.1731444096123,mg kg^-1,available_N
+W-N1+E-6,小麦,50%氮肥,加蚯蚓,N_availability,Available N,401.07988218424,mg kg^-1,available_N
+W-N1+E-6,小麦,50%氮肥,加蚯蚓,pH,pH,7.22,none,supplement
+W-N1+E-6,小麦,50%氮肥,加蚯蚓,Soil_moisture,Soil moisture,12.549240292628,%,supplement
+W-N1+E-8,小麦,50%氮肥,加蚯蚓,TC_gkg,TC,16.0178554058075,g kg^-1,C_N_pool
+W-N1+E-8,小麦,50%氮肥,加蚯蚓,TN_gkg,TN,1.34735092520714,g kg^-1,C_N_pool
+W-N1+E-8,小麦,50%氮肥,加蚯蚓,SOC_gkg,SOC,1.70321750678647,g kg^-1,C_N_pool
+W-N1+E-8,小麦,50%氮肥,加蚯蚓,NO3_N,NO3--N,48.4047255565551,mg kg^-1,available_N
+W-N1+E-8,小麦,50%氮肥,加蚯蚓,NH4_N,NH4+-N,11.5276407407642,mg kg^-1,available_N
+W-N1+E-8,小麦,50%氮肥,加蚯蚓,N_availability,Available N,59.9323662973192,mg kg^-1,available_N
+W-N1+E-8,小麦,50%氮肥,加蚯蚓,pH,pH,7.26,none,supplement
+W-N1+E-8,小麦,50%氮肥,加蚯蚓,Soil_moisture,Soil moisture,15.3402537485582,%,supplement
+W-N2+E-1,小麦,100%氮肥,加蚯蚓,TC_gkg,TC,14.6037876605988,g kg^-1,C_N_pool
+W-N2+E-1,小麦,100%氮肥,加蚯蚓,TN_gkg,TN,0.877320766448975,g kg^-1,C_N_pool
+W-N2+E-1,小麦,100%氮肥,加蚯蚓,SOC_gkg,SOC,1.93422031875966,g kg^-1,C_N_pool
+W-N2+E-1,小麦,100%氮肥,加蚯蚓,NO3_N,NO3--N,58.5084195631056,mg kg^-1,available_N
+W-N2+E-1,小麦,100%氮肥,加蚯蚓,NH4_N,NH4+-N,26.5116646948991,mg kg^-1,available_N
+W-N2+E-1,小麦,100%氮肥,加蚯蚓,N_availability,Available N,85.0200842580047,mg kg^-1,available_N
+W-N2+E-1,小麦,100%氮肥,加蚯蚓,pH,pH,7.2,none,supplement
+W-N2+E-1,小麦,100%氮肥,加蚯蚓,Soil_moisture,Soil moisture,14.4819690898684,%,supplement
+W-N2+E-6,小麦,100%氮肥,加蚯蚓,TC_gkg,TC,16.6130232810974,g kg^-1,C_N_pool
+W-N2+E-6,小麦,100%氮肥,加蚯蚓,TN_gkg,TN,0.903457999229431,g kg^-1,C_N_pool
+W-N2+E-6,小麦,100%氮肥,加蚯蚓,SOC_gkg,SOC,1.89203571257508,g kg^-1,C_N_pool
+W-N2+E-6,小麦,100%氮肥,加蚯蚓,NO3_N,NO3--N,427.237756596927,mg kg^-1,available_N
+W-N2+E-6,小麦,100%氮肥,加蚯蚓,NH4_N,NH4+-N,16.5512089203144,mg kg^-1,available_N
+W-N2+E-6,小麦,100%氮肥,加蚯蚓,N_availability,Available N,443.788965517241,mg kg^-1,available_N
+W-N2+E-6,小麦,100%氮肥,加蚯蚓,pH,pH,7.12,none,supplement
+W-N2+E-6,小麦,100%氮肥,加蚯蚓,Soil_moisture,Soil moisture,175.862068965517,%,supplement
+W-N2+E-9,小麦,100%氮肥,加蚯蚓,TC_gkg,TC,16.9245624542236,g kg^-1,C_N_pool
+W-N2+E-9,小麦,100%氮肥,加蚯蚓,TN_gkg,TN,0.662416219711304,g kg^-1,C_N_pool
+W-N2+E-9,小麦,100%氮肥,加蚯蚓,SOC_gkg,SOC,1.68393376493953,g kg^-1,C_N_pool
+W-N2+E-9,小麦,100%氮肥,加蚯蚓,NO3_N,NO3--N,53.5949832773419,mg kg^-1,available_N
+W-N2+E-9,小麦,100%氮肥,加蚯蚓,NH4_N,NH4+-N,16.5136700590277,mg kg^-1,available_N
+W-N2+E-9,小麦,100%氮肥,加蚯蚓,N_availability,Available N,70.1086533363696,mg kg^-1,available_N
+W-N2+E-9,小麦,100%氮肥,加蚯蚓,pH,pH,7.2,none,supplement
+W-N2+E-9,小麦,100%氮肥,加蚯蚓,Soil_moisture,Soil moisture,10.1321585903083,%,supplement
+W-N3+E-3,小麦,150%氮肥,加蚯蚓,TC_gkg,TC,15.027539730072,g kg^-1,C_N_pool
+W-N3+E-3,小麦,150%氮肥,加蚯蚓,TN_gkg,TN,0.638802796602249,g kg^-1,C_N_pool
+W-N3+E-3,小麦,150%氮肥,加蚯蚓,SOC_gkg,SOC,1.70651431962112,g kg^-1,C_N_pool
+W-N3+E-3,小麦,150%氮肥,加蚯蚓,NO3_N,NO3--N,41.9009371228317,mg kg^-1,available_N
+W-N3+E-3,小麦,150%氮肥,加蚯蚓,NH4_N,NH4+-N,23.7342946027082,mg kg^-1,available_N
+W-N3+E-3,小麦,150%氮肥,加蚯蚓,N_availability,Available N,65.63523172554,mg kg^-1,available_N
+W-N3+E-3,小麦,150%氮肥,加蚯蚓,pH,pH,7.08,none,supplement
+W-N3+E-3,小麦,150%氮肥,加蚯蚓,Soil_moisture,Soil moisture,18.6943620178042,%,supplement
+W-N3+E-6,小麦,150%氮肥,加蚯蚓,TC_gkg,TC,15.6706023216248,g kg^-1,C_N_pool
+W-N3+E-6,小麦,150%氮肥,加蚯蚓,TN_gkg,TN,0.61352301388979,g kg^-1,C_N_pool
+W-N3+E-6,小麦,150%氮肥,加蚯蚓,SOC_gkg,SOC,1.36152792925883,g kg^-1,C_N_pool
+W-N3+E-6,小麦,150%氮肥,加蚯蚓,NO3_N,NO3--N,40.8504060857436,mg kg^-1,available_N
+W-N3+E-6,小麦,150%氮肥,加蚯蚓,NH4_N,NH4+-N,25.4676596417146,mg kg^-1,available_N
+W-N3+E-6,小麦,150%氮肥,加蚯蚓,N_availability,Available N,66.3180657274583,mg kg^-1,available_N
+W-N3+E-6,小麦,150%氮肥,加蚯蚓,pH,pH,7.19,none,supplement
+W-N3+E-6,小麦,150%氮肥,加蚯蚓,Soil_moisture,Soil moisture,17.6470588235294,%,supplement
+W-N3+E-10,小麦,150%氮肥,加蚯蚓,TC_gkg,TC,16.9381213188171,g kg^-1,C_N_pool
+W-N3+E-10,小麦,150%氮肥,加蚯蚓,TN_gkg,TN,0.755683705210686,g kg^-1,C_N_pool
+W-N3+E-10,小麦,150%氮肥,加蚯蚓,SOC_gkg,SOC,1.07491470960899,g kg^-1,C_N_pool
+W-N3+E-10,小麦,150%氮肥,加蚯蚓,NO3_N,NO3--N,423.42755272051,mg kg^-1,available_N
+W-N3+E-10,小麦,150%氮肥,加蚯蚓,NH4_N,NH4+-N,21.5724472794898,mg kg^-1,available_N
+W-N3+E-10,小麦,150%氮肥,加蚯蚓,N_availability,Available N,445,mg kg^-1,available_N
+W-N3+E-10,小麦,150%氮肥,加蚯蚓,pH,pH,7.15,none,supplement
+W-N3+E-10,小麦,150%氮肥,加蚯蚓,Soil_moisture,Soil moisture,16.0092807424594,%,supplement
+W-N4+E-2,小麦,200%氮肥,加蚯蚓,TC_gkg,TC,19.0122151374817,g kg^-1,C_N_pool
+W-N4+E-2,小麦,200%氮肥,加蚯蚓,TN_gkg,TN,1.88784390687943,g kg^-1,C_N_pool
+W-N4+E-2,小麦,200%氮肥,加蚯蚓,SOC_gkg,SOC,1.67846621498575,g kg^-1,C_N_pool
+W-N4+E-2,小麦,200%氮肥,加蚯蚓,NO3_N,NO3--N,51.4489750228715,mg kg^-1,available_N
+W-N4+E-2,小麦,200%氮肥,加蚯蚓,NH4_N,NH4+-N,18.47570096096,mg kg^-1,available_N
+W-N4+E-2,小麦,200%氮肥,加蚯蚓,N_availability,Available N,69.9246759838315,mg kg^-1,available_N
+W-N4+E-2,小麦,200%氮肥,加蚯蚓,pH,pH,7.13,none,supplement
+W-N4+E-2,小麦,200%氮肥,加蚯蚓,Soil_moisture,Soil moisture,15.0086256469235,%,supplement
+W-N4+E-4,小麦,200%氮肥,加蚯蚓,TC_gkg,TC,19.2588007450104,g kg^-1,C_N_pool
+W-N4+E-4,小麦,200%氮肥,加蚯蚓,TN_gkg,TN,0.822389125823975,g kg^-1,C_N_pool
+W-N4+E-4,小麦,200%氮肥,加蚯蚓,SOC_gkg,SOC,2.0654362943797002,g kg^-1,C_N_pool
+W-N4+E-4,小麦,200%氮肥,加蚯蚓,NO3_N,NO3--N,42.3855819884791,mg kg^-1,available_N
+W-N4+E-4,小麦,200%氮肥,加蚯蚓,NH4_N,NH4+-N,26.8224069418876,mg kg^-1,available_N
+W-N4+E-4,小麦,200%氮肥,加蚯蚓,N_availability,Available N,69.2079889303668,mg kg^-1,available_N
+W-N4+E-4,小麦,200%氮肥,加蚯蚓,pH,pH,7.19,none,supplement
+W-N4+E-4,小麦,200%氮肥,加蚯蚓,Soil_moisture,Soil moisture,17.8550383028875,%,supplement
+W-N4+E-7,小麦,200%氮肥,加蚯蚓,TC_gkg,TC,22.3641657829285,g kg^-1,C_N_pool
+W-N4+E-7,小麦,200%氮肥,加蚯蚓,TN_gkg,TN,0.923750698566437,g kg^-1,C_N_pool
+W-N4+E-7,小麦,200%氮肥,加蚯蚓,SOC_gkg,SOC,1.92939377518041,g kg^-1,C_N_pool
+W-N4+E-7,小麦,200%氮肥,加蚯蚓,NO3_N,NO3--N,417.965908941513,mg kg^-1,available_N
+W-N4+E-7,小麦,200%氮肥,加蚯蚓,NH4_N,NH4+-N,21.0237104356495,mg kg^-1,available_N
+W-N4+E-7,小麦,200%氮肥,加蚯蚓,N_availability,Available N,438.989619377163,mg kg^-1,available_N
+W-N4+E-7,小麦,200%氮肥,加蚯蚓,pH,pH,7.21,none,supplement
+W-N4+E-7,小麦,200%氮肥,加蚯蚓,Soil_moisture,Soil moisture,16.8396770472895,%,supplement
+R-N1-11,黑麦草,50%氮肥,不加蚯蚓,TC_gkg,TC,15.1235949993134,g kg^-1,C_N_pool
+R-N1-11,黑麦草,50%氮肥,不加蚯蚓,TN_gkg,TN,0.506763532757759,g kg^-1,C_N_pool
+R-N1-11,黑麦草,50%氮肥,不加蚯蚓,SOC_gkg,SOC,1.00954411625862,g kg^-1,C_N_pool
+R-N1-11,黑麦草,50%氮肥,不加蚯蚓,NO3_N,NO3--N,32.1487953929912,mg kg^-1,available_N
+R-N1-11,黑麦草,50%氮肥,不加蚯蚓,NH4_N,NH4+-N,12.7556907644497,mg kg^-1,available_N
+R-N1-11,黑麦草,50%氮肥,不加蚯蚓,N_availability,Available N,44.9044861574409,mg kg^-1,available_N
+R-N1-11,黑麦草,50%氮肥,不加蚯蚓,pH,pH,7.25,none,supplement
+R-N1-11,黑麦草,50%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,14.8765077541643,%,supplement
+R-N1-13,黑麦草,50%氮肥,不加蚯蚓,TC_gkg,TC,15.5490601062775,g kg^-1,C_N_pool
+R-N1-13,黑麦草,50%氮肥,不加蚯蚓,TN_gkg,TN,0.550331473350525,g kg^-1,C_N_pool
+R-N1-13,黑麦草,50%氮肥,不加蚯蚓,SOC_gkg,SOC,1.54783196335782,g kg^-1,C_N_pool
+R-N1-13,黑麦草,50%氮肥,不加蚯蚓,NO3_N,NO3--N,42.5456559203729,mg kg^-1,available_N
+R-N1-13,黑麦草,50%氮肥,不加蚯蚓,NH4_N,NH4+-N,13.1023513937077,mg kg^-1,available_N
+R-N1-13,黑麦草,50%氮肥,不加蚯蚓,N_availability,Available N,55.6480073140806,mg kg^-1,available_N
+R-N1-13,黑麦草,50%氮肥,不加蚯蚓,pH,pH,7.31,none,supplement
+R-N1-13,黑麦草,50%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,12.9848229342327,%,supplement
+R-N1-17,黑麦草,50%氮肥,不加蚯蚓,TC_gkg,TC,17.2490990161896,g kg^-1,C_N_pool
+R-N1-17,黑麦草,50%氮肥,不加蚯蚓,TN_gkg,TN,0.524007380008698,g kg^-1,C_N_pool
+R-N1-17,黑麦草,50%氮肥,不加蚯蚓,SOC_gkg,SOC,2.5613138531915,g kg^-1,C_N_pool
+R-N1-17,黑麦草,50%氮肥,不加蚯蚓,NO3_N,NO3--N,34.3489043023499,mg kg^-1,available_N
+R-N1-17,黑麦草,50%氮肥,不加蚯蚓,NH4_N,NH4+-N,8.31336887334271,mg kg^-1,available_N
+R-N1-17,黑麦草,50%氮肥,不加蚯蚓,N_availability,Available N,42.6622731756926,mg kg^-1,available_N
+R-N1-17,黑麦草,50%氮肥,不加蚯蚓,pH,pH,7.35,none,supplement
+R-N1-17,黑麦草,50%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,11.0188261351052,%,supplement
+R-N2-11,黑麦草,100%氮肥,不加蚯蚓,TC_gkg,TC,16.4527499675751,g kg^-1,C_N_pool
+R-N2-11,黑麦草,100%氮肥,不加蚯蚓,TN_gkg,TN,0.577217973768711,g kg^-1,C_N_pool
+R-N2-11,黑麦草,100%氮肥,不加蚯蚓,SOC_gkg,SOC,1.99711243693241,g kg^-1,C_N_pool
+R-N2-11,黑麦草,100%氮肥,不加蚯蚓,NO3_N,NO3--N,40.4010209456111,mg kg^-1,available_N
+R-N2-11,黑麦草,100%氮肥,不加蚯蚓,NH4_N,NH4+-N,18.5512700084852,mg kg^-1,available_N
+R-N2-11,黑麦草,100%氮肥,不加蚯蚓,N_availability,Available N,58.9522909540962,mg kg^-1,available_N
+R-N2-11,黑麦草,100%氮肥,不加蚯蚓,pH,pH,7.12,none,supplement
+R-N2-11,黑麦草,100%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,13.2999443516973,%,supplement
+R-N2-13,黑麦草,100%氮肥,不加蚯蚓,TC_gkg,TC,16.7924213409424,g kg^-1,C_N_pool
+R-N2-13,黑麦草,100%氮肥,不加蚯蚓,TN_gkg,TN,0.635921284556389,g kg^-1,C_N_pool
+R-N2-13,黑麦草,100%氮肥,不加蚯蚓,SOC_gkg,SOC,2.70020075934349,g kg^-1,C_N_pool
+R-N2-13,黑麦草,100%氮肥,不加蚯蚓,NO3_N,NO3--N,26.704494709057,mg kg^-1,available_N
+R-N2-13,黑麦草,100%氮肥,不加蚯蚓,NH4_N,NH4+-N,15.8246423021989,mg kg^-1,available_N
+R-N2-13,黑麦草,100%氮肥,不加蚯蚓,N_availability,Available N,42.5291370112559,mg kg^-1,available_N
+R-N2-13,黑麦草,100%氮肥,不加蚯蚓,pH,pH,7.06,none,supplement
+R-N2-13,黑麦草,100%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,16.211504938989,%,supplement
+R-N2-17,黑麦草,100%氮肥,不加蚯蚓,TC_gkg,TC,16.5846645832062,g kg^-1,C_N_pool
+R-N2-17,黑麦草,100%氮肥,不加蚯蚓,TN_gkg,TN,0.800571441650391,g kg^-1,C_N_pool
+R-N2-17,黑麦草,100%氮肥,不加蚯蚓,SOC_gkg,SOC,2.45238237175467,g kg^-1,C_N_pool
+R-N2-17,黑麦草,100%氮肥,不加蚯蚓,NO3_N,NO3--N,39.9715916354611,mg kg^-1,available_N
+R-N2-17,黑麦草,100%氮肥,不加蚯蚓,NH4_N,NH4+-N,11.1948974002588,mg kg^-1,available_N
+R-N2-17,黑麦草,100%氮肥,不加蚯蚓,N_availability,Available N,51.1664890357199,mg kg^-1,available_N
+R-N2-17,黑麦草,100%氮肥,不加蚯蚓,pH,pH,7.38,none,supplement
+R-N2-17,黑麦草,100%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,11.7352614015573,%,supplement
+R-N3-11,黑麦草,150%氮肥,不加蚯蚓,TC_gkg,TC,20.5593729019165,g kg^-1,C_N_pool
+R-N3-11,黑麦草,150%氮肥,不加蚯蚓,TN_gkg,TN,0.806129574775696,g kg^-1,C_N_pool
+R-N3-11,黑麦草,150%氮肥,不加蚯蚓,SOC_gkg,SOC,1.92281158523315,g kg^-1,C_N_pool
+R-N3-11,黑麦草,150%氮肥,不加蚯蚓,NO3_N,NO3--N,46.0033110162486,mg kg^-1,available_N
+R-N3-11,黑麦草,150%氮肥,不加蚯蚓,NH4_N,NH4+-N,14.3612872185914,mg kg^-1,available_N
+R-N3-11,黑麦草,150%氮肥,不加蚯蚓,N_availability,Available N,60.3645982348401,mg kg^-1,available_N
+R-N3-11,黑麦草,150%氮肥,不加蚯蚓,pH,pH,7.05,none,supplement
+R-N3-11,黑麦草,150%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,16.231884057971,%,supplement
+R-N3-13,黑麦草,150%氮肥,不加蚯蚓,TC_gkg,TC,14.420473575592,g kg^-1,C_N_pool
+R-N3-13,黑麦草,150%氮肥,不加蚯蚓,TN_gkg,TN,0.697777271270752,g kg^-1,C_N_pool
+R-N3-13,黑麦草,150%氮肥,不加蚯蚓,SOC_gkg,SOC,1.75593414650691,g kg^-1,C_N_pool
+R-N3-13,黑麦草,150%氮肥,不加蚯蚓,NO3_N,NO3--N,28.9483949221097,mg kg^-1,available_N
+R-N3-13,黑麦草,150%氮肥,不加蚯蚓,NH4_N,NH4+-N,16.9249388254606,mg kg^-1,available_N
+R-N3-13,黑麦草,150%氮肥,不加蚯蚓,N_availability,Available N,45.8733337475703,mg kg^-1,available_N
+R-N3-13,黑麦草,150%氮肥,不加蚯蚓,pH,pH,7.03,none,supplement
+R-N3-13,黑麦草,150%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,18.5897435897436,%,supplement
+R-N3-17,黑麦草,150%氮肥,不加蚯蚓,TC_gkg,TC,13.7686097621918,g kg^-1,C_N_pool
+R-N3-17,黑麦草,150%氮肥,不加蚯蚓,TN_gkg,TN,0.563520640134811,g kg^-1,C_N_pool
+R-N3-17,黑麦草,150%氮肥,不加蚯蚓,SOC_gkg,SOC,2.16460697883963,g kg^-1,C_N_pool
+R-N3-17,黑麦草,150%氮肥,不加蚯蚓,NO3_N,NO3--N,45.929042755718,mg kg^-1,available_N
+R-N3-17,黑麦草,150%氮肥,不加蚯蚓,NH4_N,NH4+-N,16.6848769564024,mg kg^-1,available_N
+R-N3-17,黑麦草,150%氮肥,不加蚯蚓,N_availability,Available N,62.6139197121203,mg kg^-1,available_N
+R-N3-17,黑麦草,150%氮肥,不加蚯蚓,pH,pH,7.16,none,supplement
+R-N3-17,黑麦草,150%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,13.2394366197183,%,supplement
+R-N4-11,黑麦草,200%氮肥,不加蚯蚓,TC_gkg,TC,22.7115702629089,g kg^-1,C_N_pool
+R-N4-11,黑麦草,200%氮肥,不加蚯蚓,TN_gkg,TN,0.715996623039246,g kg^-1,C_N_pool
+R-N4-11,黑麦草,200%氮肥,不加蚯蚓,SOC_gkg,SOC,2.27742796613996,g kg^-1,C_N_pool
+R-N4-11,黑麦草,200%氮肥,不加蚯蚓,NO3_N,NO3--N,35.4425486805889,mg kg^-1,available_N
+R-N4-11,黑麦草,200%氮肥,不加蚯蚓,NH4_N,NH4+-N,5.48481841150083,mg kg^-1,available_N
+R-N4-11,黑麦草,200%氮肥,不加蚯蚓,N_availability,Available N,40.9273670920897,mg kg^-1,available_N
+R-N4-11,黑麦草,200%氮肥,不加蚯蚓,pH,pH,7.09,none,supplement
+R-N4-11,黑麦草,200%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,13.1861912846633,%,supplement
+R-N4-13,黑麦草,200%氮肥,不加蚯蚓,TC_gkg,TC,17.3894941806793,g kg^-1,C_N_pool
+R-N4-13,黑麦草,200%氮肥,不加蚯蚓,TN_gkg,TN,0.744672045111656,g kg^-1,C_N_pool
+R-N4-13,黑麦草,200%氮肥,不加蚯蚓,SOC_gkg,SOC,3.1125528216362,g kg^-1,C_N_pool
+R-N4-13,黑麦草,200%氮肥,不加蚯蚓,NO3_N,NO3--N,48.4084726479512,mg kg^-1,available_N
+R-N4-13,黑麦草,200%氮肥,不加蚯蚓,NH4_N,NH4+-N,9.1572563646883,mg kg^-1,available_N
+R-N4-13,黑麦草,200%氮肥,不加蚯蚓,N_availability,Available N,57.5657290126395,mg kg^-1,available_N
+R-N4-13,黑麦草,200%氮肥,不加蚯蚓,pH,pH,7.04,none,supplement
+R-N4-13,黑麦草,200%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,12.4859392575928,%,supplement
+R-N4-17,黑麦草,200%氮肥,不加蚯蚓,TC_gkg,TC,17.4442303180695,g kg^-1,C_N_pool
+R-N4-17,黑麦草,200%氮肥,不加蚯蚓,TN_gkg,TN,0.608893856406212,g kg^-1,C_N_pool
+R-N4-17,黑麦草,200%氮肥,不加蚯蚓,SOC_gkg,SOC,2.64120006254459,g kg^-1,C_N_pool
+R-N4-17,黑麦草,200%氮肥,不加蚯蚓,NO3_N,NO3--N,33.7476301632949,mg kg^-1,available_N
+R-N4-17,黑麦草,200%氮肥,不加蚯蚓,NH4_N,NH4+-N,12.8206880146598,mg kg^-1,available_N
+R-N4-17,黑麦草,200%氮肥,不加蚯蚓,N_availability,Available N,46.5683181779547,mg kg^-1,available_N
+R-N4-17,黑麦草,200%氮肥,不加蚯蚓,pH,pH,7.18,none,supplement
+R-N4-17,黑麦草,200%氮肥,不加蚯蚓,Soil_moisture,Soil moisture,12.0927664273882,%,supplement
+R-N1+E-16,黑麦草,50%氮肥,加蚯蚓,TC_gkg,TC,13.5889780521393,g kg^-1,C_N_pool
+R-N1+E-16,黑麦草,50%氮肥,加蚯蚓,TN_gkg,TN,1.70926138758659,g kg^-1,C_N_pool
+R-N1+E-16,黑麦草,50%氮肥,加蚯蚓,SOC_gkg,SOC,1.49330106960137,g kg^-1,C_N_pool
+R-N1+E-16,黑麦草,50%氮肥,加蚯蚓,NO3_N,NO3--N,51.5803973064796,mg kg^-1,available_N
+R-N1+E-16,黑麦草,50%氮肥,加蚯蚓,NH4_N,NH4+-N,8.61001917537223,mg kg^-1,available_N
+R-N1+E-16,黑麦草,50%氮肥,加蚯蚓,N_availability,Available N,60.1904164818518,mg kg^-1,available_N
+R-N1+E-16,黑麦草,50%氮肥,加蚯蚓,pH,pH,7.12,none,supplement
+R-N1+E-16,黑麦草,50%氮肥,加蚯蚓,Soil_moisture,Soil moisture,26.4687302590019,%,supplement
+R-N1+E-17,黑麦草,50%氮肥,加蚯蚓,TC_gkg,TC,12.9006361961365,g kg^-1,C_N_pool
+R-N1+E-17,黑麦草,50%氮肥,加蚯蚓,TN_gkg,TN,1.56297504901886,g kg^-1,C_N_pool
+R-N1+E-17,黑麦草,50%氮肥,加蚯蚓,SOC_gkg,SOC,1.6149338739868,g kg^-1,C_N_pool
+R-N1+E-17,黑麦草,50%氮肥,加蚯蚓,NO3_N,NO3--N,35.7963742138358,mg kg^-1,available_N
+R-N1+E-17,黑麦草,50%氮肥,加蚯蚓,NH4_N,NH4+-N,5.96050549444031,mg kg^-1,available_N
+R-N1+E-17,黑麦草,50%氮肥,加蚯蚓,N_availability,Available N,41.7568797082761,mg kg^-1,available_N
+R-N1+E-17,黑麦草,50%氮肥,加蚯蚓,pH,pH,7.09,none,supplement
+R-N1+E-17,黑麦草,50%氮肥,加蚯蚓,Soil_moisture,Soil moisture,17.7058823529412,%,supplement
+R-N1+E-20,黑麦草,50%氮肥,加蚯蚓,TC_gkg,TC,13.4590864181519,g kg^-1,C_N_pool
+R-N1+E-20,黑麦草,50%氮肥,加蚯蚓,TN_gkg,TN,0.900365263223648,g kg^-1,C_N_pool
+R-N1+E-20,黑麦草,50%氮肥,加蚯蚓,SOC_gkg,SOC,1.99477615274723,g kg^-1,C_N_pool
+R-N1+E-20,黑麦草,50%氮肥,加蚯蚓,NO3_N,NO3--N,52.1662408565653,mg kg^-1,available_N
+R-N1+E-20,黑麦草,50%氮肥,加蚯蚓,NH4_N,NH4+-N,8.82829677409571,mg kg^-1,available_N
+R-N1+E-20,黑麦草,50%氮肥,加蚯蚓,N_availability,Available N,60.994537630661,mg kg^-1,available_N
+R-N1+E-20,黑麦草,50%氮肥,加蚯蚓,pH,pH,7.16,none,supplement
+R-N1+E-20,黑麦草,50%氮肥,加蚯蚓,Soil_moisture,Soil moisture,21.2946158499697,%,supplement
+R-N2+E-12,黑麦草,100%氮肥,加蚯蚓,TC_gkg,TC,18.2189762592316,g kg^-1,C_N_pool
+R-N2+E-12,黑麦草,100%氮肥,加蚯蚓,TN_gkg,TN,0.704611912369728,g kg^-1,C_N_pool
+R-N2+E-12,黑麦草,100%氮肥,加蚯蚓,SOC_gkg,SOC,2.73256557631362,g kg^-1,C_N_pool
+R-N2+E-12,黑麦草,100%氮肥,加蚯蚓,NO3_N,NO3--N,27.4700728293496,mg kg^-1,available_N
+R-N2+E-12,黑麦草,100%氮肥,加蚯蚓,NH4_N,NH4+-N,10.3603674135972,mg kg^-1,available_N
+R-N2+E-12,黑麦草,100%氮肥,加蚯蚓,N_availability,Available N,37.8304402429468,mg kg^-1,available_N
+R-N2+E-12,黑麦草,100%氮肥,加蚯蚓,pH,pH,7.02,none,supplement
+R-N2+E-12,黑麦草,100%氮肥,加蚯蚓,Soil_moisture,Soil moisture,16.144018583043,%,supplement
+R-N2+E-15,黑麦草,100%氮肥,加蚯蚓,TC_gkg,TC,18.2238793373108,g kg^-1,C_N_pool
+R-N2+E-15,黑麦草,100%氮肥,加蚯蚓,TN_gkg,TN,0.722729489207268,g kg^-1,C_N_pool
+R-N2+E-15,黑麦草,100%氮肥,加蚯蚓,SOC_gkg,SOC,1.64803443435699,g kg^-1,C_N_pool
+R-N2+E-15,黑麦草,100%氮肥,加蚯蚓,NO3_N,NO3--N,27.915357851404,mg kg^-1,available_N
+R-N2+E-15,黑麦草,100%氮肥,加蚯蚓,NH4_N,NH4+-N,9.50011309119528,mg kg^-1,available_N
+R-N2+E-15,黑麦草,100%氮肥,加蚯蚓,N_availability,Available N,37.4154709425993,mg kg^-1,available_N
+R-N2+E-15,黑麦草,100%氮肥,加蚯蚓,pH,pH,7.18,none,supplement
+R-N2+E-15,黑麦草,100%氮肥,加蚯蚓,Soil_moisture,Soil moisture,18.8645771732703,%,supplement
+R-N2+E-19,黑麦草,100%氮肥,加蚯蚓,TC_gkg,TC,17.4627661705017,g kg^-1,C_N_pool
+R-N2+E-19,黑麦草,100%氮肥,加蚯蚓,TN_gkg,TN,1.31427749991417,g kg^-1,C_N_pool
+R-N2+E-19,黑麦草,100%氮肥,加蚯蚓,SOC_gkg,SOC,1.92220676170523,g kg^-1,C_N_pool
+R-N2+E-19,黑麦草,100%氮肥,加蚯蚓,NO3_N,NO3--N,38.9006529940405,mg kg^-1,available_N
+R-N2+E-19,黑麦草,100%氮肥,加蚯蚓,NH4_N,NH4+-N,6.13210445557625,mg kg^-1,available_N
+R-N2+E-19,黑麦草,100%氮肥,加蚯蚓,N_availability,Available N,45.0327574496168,mg kg^-1,available_N
+R-N2+E-19,黑麦草,100%氮肥,加蚯蚓,pH,pH,7.06,none,supplement
+R-N2+E-19,黑麦草,100%氮肥,加蚯蚓,Soil_moisture,Soil moisture,19.2170818505338,%,supplement
+R-N3+E-11,黑麦草,150%氮肥,加蚯蚓,TC_gkg,TC,15.7100474834442,g kg^-1,C_N_pool
+R-N3+E-11,黑麦草,150%氮肥,加蚯蚓,TN_gkg,TN,0.648259073495865,g kg^-1,C_N_pool
+R-N3+E-11,黑麦草,150%氮肥,加蚯蚓,SOC_gkg,SOC,2.07041713051208,g kg^-1,C_N_pool
+R-N3+E-11,黑麦草,150%氮肥,加蚯蚓,NO3_N,NO3--N,52.10705382124,mg kg^-1,available_N
+R-N3+E-11,黑麦草,150%氮肥,加蚯蚓,NH4_N,NH4+-N,5.76132959523879,mg kg^-1,available_N
+R-N3+E-11,黑麦草,150%氮肥,加蚯蚓,N_availability,Available N,57.8683834164788,mg kg^-1,available_N
+R-N3+E-11,黑麦草,150%氮肥,加蚯蚓,pH,pH,7.15,none,supplement
+R-N3+E-11,黑麦草,150%氮肥,加蚯蚓,Soil_moisture,Soil moisture,15.0802752293578,%,supplement
+R-N3+E-13,黑麦草,150%氮肥,加蚯蚓,TC_gkg,TC,14.1707527637482,g kg^-1,C_N_pool
+R-N3+E-13,黑麦草,150%氮肥,加蚯蚓,TN_gkg,TN,1.28992408514023,g kg^-1,C_N_pool
+R-N3+E-13,黑麦草,150%氮肥,加蚯蚓,SOC_gkg,SOC,0.996913801033443,g kg^-1,C_N_pool
+R-N3+E-13,黑麦草,150%氮肥,加蚯蚓,NO3_N,NO3--N,23.3203225456067,mg kg^-1,available_N
+R-N3+E-13,黑麦草,150%氮肥,加蚯蚓,NH4_N,NH4+-N,14.1862414594907,mg kg^-1,available_N
+R-N3+E-13,黑麦草,150%氮肥,加蚯蚓,N_availability,Available N,37.5065640050974,mg kg^-1,available_N
+R-N3+E-13,黑麦草,150%氮肥,加蚯蚓,pH,pH,7.18,none,supplement
+R-N3+E-13,黑麦草,150%氮肥,加蚯蚓,Soil_moisture,Soil moisture,19.4029850746269,%,supplement
+R-N3+E-15,黑麦草,150%氮肥,加蚯蚓,TC_gkg,TC,15.5908942222595,g kg^-1,C_N_pool
+R-N3+E-15,黑麦草,150%氮肥,加蚯蚓,TN_gkg,TN,0.78883983194828,g kg^-1,C_N_pool
+R-N3+E-15,黑麦草,150%氮肥,加蚯蚓,SOC_gkg,SOC,2.34557400941849,g kg^-1,C_N_pool
+R-N3+E-15,黑麦草,150%氮肥,加蚯蚓,NO3_N,NO3--N,48.3675725851883,mg kg^-1,available_N
+R-N3+E-15,黑麦草,150%氮肥,加蚯蚓,NH4_N,NH4+-N,10.4900027636366,mg kg^-1,available_N
+R-N3+E-15,黑麦草,150%氮肥,加蚯蚓,N_availability,Available N,58.8575753488249,mg kg^-1,available_N
+R-N3+E-15,黑麦草,150%氮肥,加蚯蚓,pH,pH,7.18,none,supplement
+R-N3+E-15,黑麦草,150%氮肥,加蚯蚓,Soil_moisture,Soil moisture,12.2562674094707,%,supplement
+R-N4+E-12,黑麦草,200%氮肥,加蚯蚓,TC_gkg,TC,15.9988749027252,g kg^-1,C_N_pool
+R-N4+E-12,黑麦草,200%氮肥,加蚯蚓,TN_gkg,TN,0.690933018922806,g kg^-1,C_N_pool
+R-N4+E-12,黑麦草,200%氮肥,加蚯蚓,SOC_gkg,SOC,2.09012821408773,g kg^-1,C_N_pool
+R-N4+E-12,黑麦草,200%氮肥,加蚯蚓,NO3_N,NO3--N,57.8044576973751,mg kg^-1,available_N
+R-N4+E-12,黑麦草,200%氮肥,加蚯蚓,NH4_N,NH4+-N,5.78691046813439,mg kg^-1,available_N
+R-N4+E-12,黑麦草,200%氮肥,加蚯蚓,N_availability,Available N,63.5913681655095,mg kg^-1,available_N
+R-N4+E-12,黑麦草,200%氮肥,加蚯蚓,pH,pH,7.31,none,supplement
+R-N4+E-12,黑麦草,200%氮肥,加蚯蚓,Soil_moisture,Soil moisture,15.5172413793104,%,supplement
+R-N4+E-13,黑麦草,200%氮肥,加蚯蚓,TC_gkg,TC,16.6016912460327,g kg^-1,C_N_pool
+R-N4+E-13,黑麦草,200%氮肥,加蚯蚓,TN_gkg,TN,1.3029870390892,g kg^-1,C_N_pool
+R-N4+E-13,黑麦草,200%氮肥,加蚯蚓,SOC_gkg,SOC,1.51184955154724,g kg^-1,C_N_pool
+R-N4+E-13,黑麦草,200%氮肥,加蚯蚓,NO3_N,NO3--N,44.2646686001068,mg kg^-1,available_N
+R-N4+E-13,黑麦草,200%氮肥,加蚯蚓,NH4_N,NH4+-N,5.58866787872714,mg kg^-1,available_N
+R-N4+E-13,黑麦草,200%氮肥,加蚯蚓,N_availability,Available N,49.853336478834,mg kg^-1,available_N
+R-N4+E-13,黑麦草,200%氮肥,加蚯蚓,pH,pH,7.03,none,supplement
+R-N4+E-13,黑麦草,200%氮肥,加蚯蚓,Soil_moisture,Soil moisture,16.4144353899884,%,supplement
+R-N4+E-20,黑麦草,200%氮肥,加蚯蚓,TC_gkg,TC,15.4808187484741,g kg^-1,C_N_pool
+R-N4+E-20,黑麦草,200%氮肥,加蚯蚓,TN_gkg,TN,1.02566465735435,g kg^-1,C_N_pool
+R-N4+E-20,黑麦草,200%氮肥,加蚯蚓,SOC_gkg,SOC,2.09860791545189,g kg^-1,C_N_pool
+R-N4+E-20,黑麦草,200%氮肥,加蚯蚓,NO3_N,NO3--N,42.6974806439402,mg kg^-1,available_N
+R-N4+E-20,黑麦草,200%氮肥,加蚯蚓,NH4_N,NH4+-N,8.89823510607737,mg kg^-1,available_N
+R-N4+E-20,黑麦草,200%氮肥,加蚯蚓,N_availability,Available N,51.5957157500176,mg kg^-1,available_N
+R-N4+E-20,黑麦草,200%氮肥,加蚯蚓,pH,pH,7.03,none,supplement
+R-N4+E-20,黑麦草,200%氮肥,加蚯蚓,Soil_moisture,Soil moisture,21.1943793911007,%,supplement

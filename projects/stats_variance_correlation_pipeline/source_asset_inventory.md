@@ -5,7 +5,7 @@
 - Scanned root: `D:\项目文件202605\制图数据`
 - Approved scientific figure directory: `D:\项目文件202605\制图数据\科研用图_B2v2v3`
 - SPSS image directory: `D:\项目文件202605\制图数据\SPSS原数据图片`
-- Source CSV copied into this module: none
+- Source CSV copied into this module: exact copies under `data/clean/`
 - Source Excel/SAV/manifest files modified: none
 
 ## Filtering Rules
@@ -33,6 +33,17 @@ The scan did not identify a clear first-party historical correlation-matrix scri
 - scientific PDF original: `D:\项目文件202605\制图数据\科研用图_B2v2v3\Fig_NH4N_methodB2v2_01.pdf` -> `outputs/result_assets/original/Fig_NH4N_methodB2v2_01.pdf`
 - scientific PDF original: `D:\项目文件202605\制图数据\科研用图_B2v2v3\Fig_NO3N_methodB2v2_01.pdf` -> `outputs/result_assets/original/Fig_NO3N_methodB2v2_01.pdf`
 - SPSS result image: `D:\项目文件202605\制图数据\SPSS原数据图片\NO3-N.png` -> `outputs/result_assets/original/SPSS_NO3-N.png`
+
+These result assets are stored as reproducible references under `reference_results/original/`, not under `data/`.
+
+## Copied Clean Source Data
+
+- `D:\项目文件202605\制图数据\data\clean\soil_core_variables_latest_long.csv` -> `data/clean/soil_core_variables_latest_long.csv`
+- `D:\项目文件202605\制图数据\data\clean\soil_core_variables_latest_v3_long.csv` -> `data/clean/soil_core_variables_latest_v3_long.csv`
+- `D:\项目文件202605\制图数据\data\clean\soil_physicochemical_latest_wide.csv` -> `data/clean/soil_physicochemical_latest_wide.csv`
+- `D:\项目文件202605\制图数据\data\clean\soil_physicochemical_latest_v3_wide.csv` -> `data/clean/soil_physicochemical_latest_v3_wide.csv`
+
+The copied CSV files are treated as source data snapshots. They are not rewritten by the default pipeline.
 
 ## Scientific PDF Candidates
 
@@ -140,7 +151,7 @@ The scan did not identify a clear first-party historical correlation-matrix scri
 
 ## Data Boundary
 
-Historical CSV, Excel, SAV, and manifest files remain in the source corpus and were not copied, changed, or recalculated. The module packages frozen PDF/PNG result assets plus reusable code that can be run on explicitly supplied new data.
+Clean historical CSV files from `data/clean` are copied into the module as input data snapshots. Excel, SAV, and manifest files remain in the source corpus and were not copied, changed, or recalculated. The module packages frozen PDF/PNG result assets plus reusable code that can be run on explicitly supplied new data.
 
 ## Statistical Boundary
 
