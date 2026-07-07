@@ -1,1 +1,1 @@
-"""Reusable statistical analysis pipeline modules."""
+"""Source-derived statistical asset packaging and analysis helpers."""

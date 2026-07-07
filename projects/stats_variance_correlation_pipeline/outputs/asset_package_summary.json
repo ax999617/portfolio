@@ -1,0 +1,61 @@
+{
+  "pipeline": "stats_variance_correlation_pipeline",
+  "source_root": "D:\\项目文件202605\\制图数据",
+  "summary": {
+    "source_root": "D:\\项目文件202605\\制图数据",
+    "first_party_effective_code_assets": 64,
+    "excluded": "third-party r_libs examples, temp/test/copy paths, duplicate scripts, and fragmented templates",
+    "theme_counts": {
+      "variance_analysis": 57,
+      "correlation_analysis": 0,
+      "data_cleaning": 50,
+      "statistical_plotting": 43,
+      "pdf_report_generation": 41
+    },
+    "data_boundary": "Historical CSV/Excel/SAV files were inventoried but not copied or modified.",
+    "statistical_boundary": "Historical ANOVA, post-hoc tests, CLD letters, and frozen figures are not recomputed."
+  },
+  "outputs": [
+    {
+      "asset_id": "nh4n_research_pdf",
+      "title": "NH4-N methodB2v2 scientific result",
+      "asset_type": "pdf",
+      "role": "scientific_result_original",
+      "source_mode": "local_source",
+      "original_source_path": "D:\\项目文件202605\\制图数据\\科研用图_B2v2v3\\Fig_NH4N_methodB2v2_01.pdf",
+      "packaged_reference_path": "D:\\工作流\\portfolio\\projects\\stats_variance_correlation_pipeline\\data\\reference_assets\\original\\Fig_NH4N_methodB2v2_01.pdf",
+      "output_original": "D:\\工作流\\portfolio\\projects\\stats_variance_correlation_pipeline\\outputs\\result_assets\\original\\Fig_NH4N_methodB2v2_01.pdf",
+      "output_preview": "D:\\工作流\\portfolio\\projects\\stats_variance_correlation_pipeline\\outputs\\result_assets\\previews\\Fig_NH4N_methodB2v2_01.png",
+      "notes": "Frozen publication-style PDF selected from the approved scientific figure directory."
+    },
+    {
+      "asset_id": "no3n_research_pdf",
+      "title": "NO3-N methodB2v2 scientific result",
+      "asset_type": "pdf",
+      "role": "scientific_result_original",
+      "source_mode": "local_source",
+      "original_source_path": "D:\\项目文件202605\\制图数据\\科研用图_B2v2v3\\Fig_NO3N_methodB2v2_01.pdf",
+      "packaged_reference_path": "D:\\工作流\\portfolio\\projects\\stats_variance_correlation_pipeline\\data\\reference_assets\\original\\Fig_NO3N_methodB2v2_01.pdf",
+      "output_original": "D:\\工作流\\portfolio\\projects\\stats_variance_correlation_pipeline\\outputs\\result_assets\\original\\Fig_NO3N_methodB2v2_01.pdf",
+      "output_preview": "D:\\工作流\\portfolio\\projects\\stats_variance_correlation_pipeline\\outputs\\result_assets\\previews\\Fig_NO3N_methodB2v2_01.png",
+      "notes": "Frozen publication-style PDF selected from the approved scientific figure directory."
+    },
+    {
+      "asset_id": "no3n_spss_png",
+      "title": "NO3-N SPSS source result image",
+      "asset_type": "image",
+      "role": "spss_result_original",
+      "source_mode": "local_source",
+      "original_source_path": "D:\\项目文件202605\\制图数据\\SPSS原数据图片\\NO3-N.png",
+      "packaged_reference_path": "D:\\工作流\\portfolio\\projects\\stats_variance_correlation_pipeline\\data\\reference_assets\\original\\SPSS_NO3-N.png",
+      "output_original": "D:\\工作流\\portfolio\\projects\\stats_variance_correlation_pipeline\\outputs\\result_assets\\original\\SPSS_NO3-N.png",
+      "output_preview": "D:\\工作流\\portfolio\\projects\\stats_variance_correlation_pipeline\\outputs\\result_assets\\previews\\SPSS_NO3-N.png",
+      "notes": "Original SPSS result image paired with the NO3-N scientific result."
+    }
+  ],
+  "boundaries": [
+    "No historical CSV, Excel workbook, SAV file, manifest, CLD table, or frozen figure was modified.",
+    "Frozen scientific PDFs were rendered only to PNG previews.",
+    "Optional variance/correlation computation is available only for explicitly supplied new data."
+  ]
+}

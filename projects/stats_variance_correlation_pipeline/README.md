@@ -1,53 +1,63 @@
 # Stats Variance Correlation Pipeline
 
-Source provenance:
+This module is a source-derived statistical analysis capability extracted from the historical research plotting corpus under:
 
-- Scanned root: `<local-source>/historical-statistics`
-- Primary source project root: `<local-source>/stats-project`
-- Key historical scripts: see `source_asset_inventory.md`
-- Source CSV copied into this module: none
-- Reproducible demo CSV: `data/example_measurements.csv`
+- `D:\项目文件202605\制图数据`
+- approved scientific result source: `D:\项目文件202605\制图数据\科研用图_B2v2v3`
+- SPSS result source: `D:\项目文件202605\制图数据\SPSS原数据图片`
 
-## Problem definition
+It is not a dump of historical scripts. The scattered assets were filtered, normalized into a single project structure, and represented as a reproducible pipeline for result packaging, figure preview generation, provenance reporting, and optional variance/correlation analysis on new input data.
 
-This project is a data analysis and statistical modeling pipeline for tabular experiment data. It answers two common questions:
+## Analysis Goal
 
-- Do treatment groups differ in measured indicators? This is handled through group summaries and one-way variance analysis.
-- How do numeric indicators move together across samples? This is handled through a reproducible correlation matrix and heatmap.
+The source corpus supports experiment-style statistical reporting: soil nitrogen indicators, soil physicochemical variables, plant-growth indicators, nematode indices, and PPI-style metrics were cleaned, summarized, tested by variance-analysis workflows, plotted, and exported as publication-ready PDF figures.
 
-The module was created from historical local assets related to variance analysis, correlation analysis, statistical plotting, data cleaning, and PDF export. It is an independent portfolio capability module, not a folder of copied scripts.
+This portfolio module shows that workflow as an independent data-analysis and statistical-modeling pipeline:
+
+- preserve frozen historical result figures without recalculating statistics or CLD letters;
+- extract effective code assets for data cleaning, ANOVA/Tukey/CLD-aware plotting, statistical visualization, and PDF export;
+- expose a reusable tabular analysis path for future datasets requiring group summaries, variance components, and correlation matrices;
+- regenerate all portfolio preview images and the package report from committed source assets.
 
 ## Method
 
-The pipeline uses a long-format table with `sample_id`, `group`, `metric`, and `value`.
+Historical scripts were scanned for five themes: variance analysis, correlation/correlation matrix, data cleaning, statistical plotting, and PDF report/export. Third-party package examples, temporary files, test scripts, exact duplicates, and copy/template fragments were excluded.
 
-- Data cleaning standardizes column names, coerces numeric values, drops missing rows, removes duplicate sample/group/metric records, and writes a cleaning audit.
-- Variance analysis computes group-level `n`, mean, standard deviation, standard error, variance, and one-way ANOVA statistics per metric.
-- Correlation logic pivots the cleaned table to sample-by-metric format and computes a Pearson, Spearman, or Kendall correlation matrix.
-- Plotting generates reproducible figures from the computed outputs: group mean +/- SE, ANOVA effect sizes, and correlation heatmap.
-- PDF export writes a multi-page `outputs/report.pdf` using matplotlib `PdfPages`.
+The default pipeline does not recompute historical ANOVA, post-hoc tests, CLD labels, or source CSV/Excel files. Instead it:
 
-No historical CSV/Excel file, manifest, CLD table, or frozen figure is modified or recomputed by this project. The included demo outputs are generated from the new synthetic example CSV only.
+1. loads the curated source-asset catalog;
+2. copies the selected frozen result assets into `outputs/result_assets/original/`;
+3. renders the two selected scientific PDFs into PNG previews;
+4. copies the selected SPSS image into the preview set;
+5. writes `outputs/asset_package_summary.json`;
+6. exports `outputs/report.pdf` with provenance, method boundaries, and result previews.
 
-## Implementation
+The optional `--analysis-input` path uses the reusable functions in `src/table_methods.py` for new data only. It standardizes a long table, computes group summaries and variance components, and creates a correlation matrix. It does not run Tukey/CLD logic and is not used for the frozen source results.
+
+## Project Structure
 
 ```text
 stats_variance_correlation_pipeline/
-  src/
-    data_processing.py   # loading, long/wide normalization, cleaning audit
-    analysis.py          # group summaries, one-way ANOVA, correlation matrix
-    plotting.py          # regenerated PNG figures
-    pdf_report.py        # PDF report export
-  data/
-    example_measurements.csv
-  outputs/
-    figures/
-    report.pdf
-  run_pipeline.py
-  source_asset_inventory.md
+|-- data/
+|   |-- reference_assets/original/    # committed frozen result assets used for reproducible runs
+|   `-- source_asset_catalog.json     # generated source catalog with provenance
+|-- outputs/
+|   |-- result_assets/original/       # pipeline output copies of selected source assets
+|   |-- result_assets/previews/       # regenerated PNG previews
+|   |-- asset_package_summary.json
+|   `-- report.pdf
+|-- src/
+|   |-- assets.py                     # asset copy/render pipeline
+|   |-- catalog.py                    # curated source/result asset definitions
+|   |-- report.py                     # PDF report export
+|   |-- table_methods.py              # optional cleaning, variance, and correlation methods
+|   `-- visualization.py              # optional statistical figure helpers
+|-- run_pipeline.py
+|-- source_asset_inventory.md
+`-- requirements.txt
 ```
 
-## How to run
+## How To Run
 
 From this directory:
 
@@ -56,30 +66,45 @@ pip install -r requirements.txt
 python run_pipeline.py
 ```
 
-Use your own CSV or Excel file:
+Use the original local source root when available:
 
 ```bash
-python run_pipeline.py --input path/to/table.csv --group-col treatment --metric-col indicator --value-col value --sample-col sample_id
+python run_pipeline.py --source-root "D:\项目文件202605\制图数据"
 ```
 
-Choose a correlation method:
+Run the optional reusable analysis path on a new CSV:
 
 ```bash
-python run_pipeline.py --correlation-method pearson
+python run_pipeline.py --analysis-input path/to/new_table.csv --group-col treatment --sample-col sample_id
 ```
 
-## Results
+The optional input can be long format with `sample_id`, `group`, `metric`, `value`, or wide format with one grouping column and numeric measurement columns.
 
-Running the pipeline writes all outputs under `outputs/`:
+## Output Examples
 
-- `outputs/cleaned_data.csv`
-- `outputs/cleaning_report.csv`
-- `outputs/group_summary.csv`
-- `outputs/anova_results.csv`
-- `outputs/correlation_matrix.csv`
-- `outputs/figures/group_mean_se.png`
-- `outputs/figures/anova_effect_sizes.png`
-- `outputs/figures/correlation_heatmap.png`
+Selected frozen result assets:
+
+- `outputs/result_assets/original/Fig_NH4N_methodB2v2_01.pdf`
+- `outputs/result_assets/original/Fig_NO3N_methodB2v2_01.pdf`
+- `outputs/result_assets/original/SPSS_NO3-N.png`
+
+Regenerated previews:
+
+![NH4-N scientific PDF preview](outputs/result_assets/previews/Fig_NH4N_methodB2v2_01.png)
+
+![NO3-N scientific PDF preview](outputs/result_assets/previews/Fig_NO3N_methodB2v2_01.png)
+
+![SPSS NO3-N source image](outputs/result_assets/previews/SPSS_NO3-N.png)
+
+PDF report:
+
 - `outputs/report.pdf`
 
-These figures and the PDF are regenerated from the input table each time the pipeline is run.
+All previews and the report can be regenerated by `python run_pipeline.py` from the committed reference assets.
+
+## Reproducibility Boundary
+
+- No historical CSV, Excel workbook, manifest, CLD table, or frozen figure is modified.
+- The two scientific PDFs are preserved as original result assets and rendered only for README/report previews.
+- The SPSS result image is copied as an original and preview asset.
+- Source provenance is retained in `source_asset_inventory.md`, `data/source_asset_catalog.json`, and `outputs/asset_package_summary.json`.

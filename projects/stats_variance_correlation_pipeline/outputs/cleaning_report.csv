@@ -1,8 +1,0 @@
-﻿field,value
-source_path,portfolio/projects/stats_variance_correlation_pipeline/data/example_measurements.csv
-original_rows,60
-cleaned_rows,60
-duplicate_rows_removed,0
-missing_rows_removed,0
-metrics,"nematode_density, plant_height, root_biomass, soil_nitrate"
-groups,"Control, Treatment_A, Treatment_B"

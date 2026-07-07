@@ -4,81 +4,81 @@ import argparse
 import json
 from pathlib import Path
 
-from src.analysis import run_analysis
-from src.data_processing import clean_analysis_data, write_cleaning_report
-from src.pdf_report import build_pdf_report
-from src.plotting import generate_figures
+from src.assets import package_result_assets, write_source_catalog
+from src.catalog import DEFAULT_SOURCE_ROOT
+from src.report import build_package_report
+from src.table_methods import run_optional_analysis
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Package source-derived statistical result assets and optional new-data analysis outputs."
+    )
+    parser.add_argument("--source-root", default=str(DEFAULT_SOURCE_ROOT), help="Historical source root to prefer when available.")
+    parser.add_argument("--output-dir", default=str(PROJECT_ROOT / "outputs"), help="Pipeline output directory.")
+    parser.add_argument("--skip-render", action="store_true", help="Copy assets but skip PDF-to-PNG preview rendering.")
+    parser.add_argument(
+        "--refresh-reference-assets",
+        action="store_true",
+        help="Refresh committed reference assets from the local source root when it exists.",
+    )
+    parser.add_argument("--analysis-input", default=None, help="Optional new CSV/TSV/XLSX table for reusable analysis methods.")
+    parser.add_argument("--group-col", default=None, help="Group/treatment column for optional analysis.")
+    parser.add_argument("--sample-col", default=None, help="Sample id column for optional analysis.")
+    parser.add_argument("--metric-col", default=None, help="Metric column for optional long-format analysis.")
+    parser.add_argument("--value-col", default=None, help="Value column for optional long-format analysis.")
+    parser.add_argument(
+        "--correlation-method",
+        default="spearman",
+        choices=("pearson", "spearman", "kendall"),
+        help="Correlation method for optional analysis.",
+    )
+    return parser.parse_args()
+
+
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Run the variance/correlation statistical analysis pipeline.")
-    parser.add_argument("--input", default=str(PROJECT_ROOT / "data" / "example_measurements.csv"))
-    parser.add_argument("--output-dir", default=str(PROJECT_ROOT / "outputs"))
-    parser.add_argument("--group-col", default=None)
-    parser.add_argument("--metric-col", default=None)
-    parser.add_argument("--value-col", default=None)
-    parser.add_argument("--sample-col", default=None)
-    parser.add_argument("--correlation-method", default="spearman", choices=["pearson", "spearman", "kendall"])
-    args = parser.parse_args()
-
+    args = parse_args()
     output_dir = Path(args.output_dir)
-    figures_dir = output_dir / "figures"
     output_dir.mkdir(parents=True, exist_ok=True)
-    figures_dir.mkdir(parents=True, exist_ok=True)
 
-    clean_data, cleaning_report = clean_analysis_data(
-        args.input,
-        group_col=args.group_col,
-        metric_col=args.metric_col,
-        value_col=args.value_col,
-        sample_col=args.sample_col,
-    )
-    clean_data.to_csv(output_dir / "cleaned_data.csv", index=False, encoding="utf-8-sig")
-    write_cleaning_report(cleaning_report, output_dir / "cleaning_report.csv")
-
-    result = run_analysis(clean_data, correlation_method=args.correlation_method)
-    result.group_summary.to_csv(output_dir / "group_summary.csv", index=False, encoding="utf-8-sig")
-    result.anova_results.to_csv(output_dir / "anova_results.csv", index=False, encoding="utf-8-sig")
-    result.correlation_matrix.to_csv(output_dir / "correlation_matrix.csv", encoding="utf-8-sig")
-
-    figures = generate_figures(
-        result.group_summary,
-        result.anova_results,
-        result.correlation_matrix,
-        figures_dir,
-    )
-    source_for_pdf = cleaning_report.source_path.encode("unicode_escape").decode("ascii")
-    cleaning_lines = [
-        f"Source: {source_for_pdf}",
-        f"Rows: original={cleaning_report.original_rows}, cleaned={cleaning_report.cleaned_rows}",
-        f"Removed: missing={cleaning_report.missing_rows_removed}, duplicates={cleaning_report.duplicate_rows_removed}",
-        f"Groups: {', '.join(cleaning_report.groups)}",
-        f"Metrics: {', '.join(cleaning_report.metrics)}",
-    ]
-    report_pdf = build_pdf_report(
-        output_dir / "report.pdf",
-        cleaning_lines,
-        result.group_summary,
-        result.anova_results,
-        result.correlation_matrix,
-        figures,
+    catalog_path = write_source_catalog(PROJECT_ROOT / "data" / "source_asset_catalog.json")
+    package_summary = package_result_assets(
+        source_root=Path(args.source_root),
+        project_root=PROJECT_ROOT,
+        output_dir=output_dir,
+        render_previews=not args.skip_render,
+        refresh_reference_assets=args.refresh_reference_assets,
     )
 
-    print(
-        json.dumps(
-            {
-                "input": str(Path(args.input)),
-                "output_dir": str(output_dir),
-                "figures": [str(path) for path in figures],
-                "report_pdf": str(report_pdf),
-            },
-            ensure_ascii=False,
-            indent=2,
+    optional_analysis = None
+    if args.analysis_input:
+        optional_analysis = run_optional_analysis(
+            input_path=Path(args.analysis_input),
+            output_dir=output_dir / "optional_analysis",
+            group_col=args.group_col,
+            sample_col=args.sample_col,
+            metric_col=args.metric_col,
+            value_col=args.value_col,
+            correlation_method=args.correlation_method,
         )
+
+    report_path = build_package_report(
+        output_pdf=output_dir / "report.pdf",
+        package_summary=package_summary,
+        optional_analysis=optional_analysis,
     )
+
+    result = {
+        "catalog": str(catalog_path),
+        "summary": str(output_dir / "asset_package_summary.json"),
+        "report_pdf": str(report_path),
+        "result_assets": package_summary["outputs"],
+        "optional_analysis": optional_analysis,
+    }
+    print(json.dumps(result, ensure_ascii=False, indent=2))
     return 0
 
 

@@ -1,0 +1,61 @@
+{
+  "summary": {
+    "source_root": "D:\\项目文件202605\\制图数据",
+    "first_party_effective_code_assets": 64,
+    "excluded": "third-party r_libs examples, temp/test/copy paths, duplicate scripts, and fragmented templates",
+    "theme_counts": {
+      "variance_analysis": 57,
+      "correlation_analysis": 0,
+      "data_cleaning": 50,
+      "statistical_plotting": 43,
+      "pdf_report_generation": 41
+    },
+    "data_boundary": "Historical CSV/Excel/SAV files were inventoried but not copied or modified.",
+    "statistical_boundary": "Historical ANOVA, post-hoc tests, CLD letters, and frozen figures are not recomputed."
+  },
+  "selected_result_assets": [
+    {
+      "asset_id": "nh4n_research_pdf",
+      "title": "NH4-N methodB2v2 scientific result",
+      "source_relative_path": "科研用图_B2v2v3/Fig_NH4N_methodB2v2_01.pdf",
+      "packaged_name": "Fig_NH4N_methodB2v2_01.pdf",
+      "asset_type": "pdf",
+      "role": "scientific_result_original",
+      "notes": "Frozen publication-style PDF selected from the approved scientific figure directory.",
+      "original_source_path": "D:\\项目文件202605\\制图数据\\科研用图_B2v2v3\\Fig_NH4N_methodB2v2_01.pdf"
+    },
+    {
+      "asset_id": "no3n_research_pdf",
+      "title": "NO3-N methodB2v2 scientific result",
+      "source_relative_path": "科研用图_B2v2v3/Fig_NO3N_methodB2v2_01.pdf",
+      "packaged_name": "Fig_NO3N_methodB2v2_01.pdf",
+      "asset_type": "pdf",
+      "role": "scientific_result_original",
+      "notes": "Frozen publication-style PDF selected from the approved scientific figure directory.",
+      "original_source_path": "D:\\项目文件202605\\制图数据\\科研用图_B2v2v3\\Fig_NO3N_methodB2v2_01.pdf"
+    },
+    {
+      "asset_id": "no3n_spss_png",
+      "title": "NO3-N SPSS source result image",
+      "source_relative_path": "SPSS原数据图片/NO3-N.png",
+      "packaged_name": "SPSS_NO3-N.png",
+      "asset_type": "image",
+      "role": "spss_result_original",
+      "notes": "Original SPSS result image paired with the NO3-N scientific result.",
+      "original_source_path": "D:\\项目文件202605\\制图数据\\SPSS原数据图片\\NO3-N.png"
+    }
+  ],
+  "representative_code_assets": [
+    "scripts/run_nematode_remaining9_oneway_tukey_20260529.R",
+    "scripts/run_nematode_remaining9_threeway_anova_20260529.R",
+    "scripts/build_soil_NO3_update_0529_fresh.R",
+    "scripts/plot_soil_NO3_update_0529.R",
+    "outputs/oneway_significance_redraw_20260529/scripts/generate_oneway_audit_figures.py",
+    "outputs/figures_clean_v5_layout_refined/scripts/plot_clean_single_indicator_figures_v5_layout_refined.py",
+    "outputs/soil_NO3_methodB2v2_20260531/scripts/restyle_soil_NO3_methodB2v2_20260531.py",
+    "outputs/soil_6remaining_methodB2v2_20260531/scripts/plot_soil_6remaining_methodB2v2_20260531.py",
+    "outputs/nematode_subset_methodB2v2_20260531/scripts/plot_nematode_subset_methodB2v2_20260531.py",
+    "outputs/plant_growth_methodB2v2_20260531/scripts/restyle_plant_growth_methodB2v2_20260531.py",
+    "outputs/PPI_methodB2v2_20260531/scripts/plot_PPI_methodB2v2_20260531.py"
+  ]
+}
