@@ -30,9 +30,9 @@ The scan did not identify a clear first-party historical correlation-matrix scri
 
 ## Selected Result Assets
 
-- scientific PDF original: `D:\项目文件202605\制图数据\科研用图_B2v2v3\Fig_NH4N_methodB2v2_01.pdf` -> `outputs/result_assets/original/Fig_NH4N_methodB2v2_01.pdf`
-- scientific PDF original: `D:\项目文件202605\制图数据\科研用图_B2v2v3\Fig_NO3N_methodB2v2_01.pdf` -> `outputs/result_assets/original/Fig_NO3N_methodB2v2_01.pdf`
-- SPSS result image: `D:\项目文件202605\制图数据\SPSS原数据图片\NO3-N.png` -> `outputs/result_assets/original/SPSS_NO3-N.png`
+- scientific PDF original: `D:\项目文件202605\制图数据\科研用图_B2v2v3\Fig_NH4N_methodB2v2_01.pdf` -> `reference_results/original/Fig_NH4N_methodB2v2_01.pdf`
+- scientific PDF original: `D:\项目文件202605\制图数据\科研用图_B2v2v3\Fig_NO3N_methodB2v2_01.pdf` -> `reference_results/original/Fig_NO3N_methodB2v2_01.pdf`
+- SPSS result image: `D:\项目文件202605\制图数据\SPSS原数据图片\NO3-N.png` -> `reference_results/original/SPSS_NO3-N.png`
 
 These result assets are stored as reproducible references under `reference_results/original/`, not under `data/`.
 

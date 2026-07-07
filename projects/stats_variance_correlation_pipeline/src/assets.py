@@ -104,7 +104,6 @@ def package_result_assets(
     refresh_reference_assets: bool = False,
 ) -> dict[str, object]:
     reference_dir = project_root / "reference_results" / "original"
-    original_dir = output_dir / "result_assets" / "original"
     preview_dir = output_dir / "result_assets" / "previews"
     log_dir = output_dir / "logs"
     outputs: list[dict[str, object]] = []
@@ -118,17 +117,14 @@ def package_result_assets(
         if refresh_reference_assets and source_mode == "local_source":
             _copy_file(selected_source, reference_path)
 
-        output_original = original_dir / asset.packaged_name
-        _copy_file(selected_source, output_original)
-
         preview_path: Path | None = None
         if render_previews:
             if asset.asset_type == "pdf":
                 preview_path = preview_dir / f"{Path(asset.packaged_name).stem}.png"
-                _render_pdf_preview(output_original, preview_path, log_dir / f"render_{asset.asset_id}.log")
+                _render_pdf_preview(selected_source, preview_path, log_dir / f"render_{asset.asset_id}.log")
             else:
                 preview_path = preview_dir / asset.packaged_name
-                _copy_file(output_original, preview_path)
+                _copy_file(selected_source, preview_path)
 
         outputs.append(
             {
@@ -138,8 +134,7 @@ def package_result_assets(
                 "role": asset.role,
                 "source_mode": source_mode,
                 "original_source_path": str(asset.source_path(source_root)),
-                "packaged_reference_path": str(reference_path),
-                "output_original": str(output_original),
+                "reference_original": str(reference_path),
                 "output_preview": str(preview_path) if preview_path else None,
                 "notes": asset.notes,
             }

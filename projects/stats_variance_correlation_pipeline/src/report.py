@@ -15,14 +15,14 @@ def _paragraph(text: str, style_name: str = "BodyText"):
 
 
 def _asset_rows(package_summary: dict[str, object]) -> list[list[str]]:
-    rows = [["Asset", "Type", "Role", "Output"]]
+    rows = [["Asset", "Type", "Role", "Reference original"]]
     for asset in package_summary["outputs"]:
         rows.append(
             [
                 str(asset["asset_id"]),
                 str(asset["asset_type"]),
                 str(asset["role"]),
-                Path(str(asset["output_original"])).name,
+                Path(str(asset["reference_original"])).name,
             ]
         )
     return rows

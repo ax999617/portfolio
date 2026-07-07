@@ -23,8 +23,7 @@
       "role": "scientific_result_original",
       "source_mode": "local_source",
       "original_source_path": "D:\\项目文件202605\\制图数据\\科研用图_B2v2v3\\Fig_NH4N_methodB2v2_01.pdf",
-      "packaged_reference_path": "D:\\工作流\\portfolio\\projects\\stats_variance_correlation_pipeline\\reference_results\\original\\Fig_NH4N_methodB2v2_01.pdf",
-      "output_original": "D:\\工作流\\portfolio\\projects\\stats_variance_correlation_pipeline\\outputs\\result_assets\\original\\Fig_NH4N_methodB2v2_01.pdf",
+      "reference_original": "D:\\工作流\\portfolio\\projects\\stats_variance_correlation_pipeline\\reference_results\\original\\Fig_NH4N_methodB2v2_01.pdf",
       "output_preview": "D:\\工作流\\portfolio\\projects\\stats_variance_correlation_pipeline\\outputs\\result_assets\\previews\\Fig_NH4N_methodB2v2_01.png",
       "notes": "Frozen publication-style PDF selected from the approved scientific figure directory."
     },
@@ -35,8 +34,7 @@
       "role": "scientific_result_original",
       "source_mode": "local_source",
       "original_source_path": "D:\\项目文件202605\\制图数据\\科研用图_B2v2v3\\Fig_NO3N_methodB2v2_01.pdf",
-      "packaged_reference_path": "D:\\工作流\\portfolio\\projects\\stats_variance_correlation_pipeline\\reference_results\\original\\Fig_NO3N_methodB2v2_01.pdf",
-      "output_original": "D:\\工作流\\portfolio\\projects\\stats_variance_correlation_pipeline\\outputs\\result_assets\\original\\Fig_NO3N_methodB2v2_01.pdf",
+      "reference_original": "D:\\工作流\\portfolio\\projects\\stats_variance_correlation_pipeline\\reference_results\\original\\Fig_NO3N_methodB2v2_01.pdf",
       "output_preview": "D:\\工作流\\portfolio\\projects\\stats_variance_correlation_pipeline\\outputs\\result_assets\\previews\\Fig_NO3N_methodB2v2_01.png",
       "notes": "Frozen publication-style PDF selected from the approved scientific figure directory."
     },
@@ -47,8 +45,7 @@
       "role": "spss_result_original",
       "source_mode": "local_source",
       "original_source_path": "D:\\项目文件202605\\制图数据\\SPSS原数据图片\\NO3-N.png",
-      "packaged_reference_path": "D:\\工作流\\portfolio\\projects\\stats_variance_correlation_pipeline\\reference_results\\original\\SPSS_NO3-N.png",
-      "output_original": "D:\\工作流\\portfolio\\projects\\stats_variance_correlation_pipeline\\outputs\\result_assets\\original\\SPSS_NO3-N.png",
+      "reference_original": "D:\\工作流\\portfolio\\projects\\stats_variance_correlation_pipeline\\reference_results\\original\\SPSS_NO3-N.png",
       "output_preview": "D:\\工作流\\portfolio\\projects\\stats_variance_correlation_pipeline\\outputs\\result_assets\\previews\\SPSS_NO3-N.png",
       "notes": "Original SPSS result image paired with the NO3-N scientific result."
     }

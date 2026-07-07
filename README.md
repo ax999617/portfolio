@@ -1,6 +1,8 @@
 # Portfolio
 
-This repository is a cloud-ready internship portfolio built from several local engineering and research projects. The focus is not a raw file dump: each module has a readable structure, a short project story, reproducible entrypoints, and representative outputs.
+This is Axing's (阿星) public portfolio repository for internship presentation. It organizes selected local engineering, data analysis, machine learning, and generative-workflow projects into readable, reproducible modules with representative outputs.
+
+The focus is not a raw file dump: each module has a clear project story, scoped source assets, reproducible entrypoints, and results that can be reviewed directly from the repository.
 
 ## Capability Areas
 
