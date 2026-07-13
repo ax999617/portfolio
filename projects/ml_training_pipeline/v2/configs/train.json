@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "provenance": {
+    "legacy_project_root": "<local-source>/ml-training",
+    "legacy_repository_path": "projects/ml_training_pipeline",
+    "complete_dataset_root": "<private-source>/henan_data",
+    "incomplete_backup_root": "<private-backup>/henan_data",
+    "dataset_access_policy": "read_only",
+    "legacy_training_entrypoint": "projects/ml_training_pipeline/src/train/train.py",
+    "legacy_weights": [
+      "projects/ml_training_pipeline/artifacts/weights/trained.pth",
+      "projects/ml_training_pipeline/artifacts/weights/quantized.pth",
+      "projects/ml_training_pipeline/artifacts/weights/quantized_model.pth"
+    ],
+    "source_csv": null,
+    "legacy_artifact_policy": "archive_only_not_used_for_v2_initialization"
+  },
+  "data": {
+    "image_size": 192,
+    "resize_size": 219,
+    "normalization_mean": [0.485, 0.456, 0.406],
+    "normalization_std": [0.229, 0.224, 0.225],
+    "classes": [
+      {
+        "slug": "luoyang_peony",
+        "display_name": "洛阳牡丹",
+        "source_directory": "洛阳牡丹"
+      },
+      {
+        "slug": "zhengzhou_bronze_artifact",
+        "display_name": "郑州商代青铜器",
+        "source_directory": "郑州商代青铜器"
+      },
+      {
+        "slug": "xinyang_maojian_tea_plant",
+        "display_name": "信阳毛尖茶树",
+        "source_directory": "信阳毛尖茶树"
+      }
+    ],
+    "num_workers": 0,
+    "verify_cross_split_duplicates": true
+  },
+  "model": {
+    "architecture": "mobilenet_v3_small",
+    "pretrained": true,
+    "pretrained_weights": "MobileNet_V3_Small_Weights.IMAGENET1K_V1",
+    "dropout": 0.2
+  },
+  "training": {
+    "seed": 42,
+    "batch_size": 32,
+    "head_epochs": 8,
+    "finetune_epochs": 0,
+    "unfreeze_last_blocks": 2,
+    "head_learning_rate": 0.001,
+    "finetune_learning_rate": 0.0001,
+    "finetune_head_learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "label_smoothing": 0.05,
+    "early_stopping_patience": 2,
+    "early_stopping_min_delta": 0.001,
+    "scheduler_factor": 0.2,
+    "scheduler_patience": 1,
+    "amp": true,
+    "deterministic": true
+  },
+  "output": {
+    "directory": "runs/default",
+    "best_checkpoint": "best.pt",
+    "last_checkpoint": "last.pt",
+    "history": "history.jsonl",
+    "summary": "summary.json"
+  }
+}
