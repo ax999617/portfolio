@@ -12,8 +12,8 @@
 
 本报告使用以下只读来源：
 
-- 完整原始数据目录：`D:\识万物APP\henan_data`
-- 不完整备份目录：`D:\乱七八糟存档\河南AI项目\henan_data`
+- `henan-complete-source`：机器本地只读的完整三类来源。
+- `henan-incomplete-backup`：机器本地只读的不完整两类备份。
 - 历史项目根：`<local-source>/ml-training`
 - 仓库内历史训练代码：`projects/ml_training_pipeline/src/train/train.py`
 - 仓库内历史模型代码：`projects/ml_training_pipeline/src/models/trained.py`
@@ -22,7 +22,7 @@
 - 历史训练曲线：`assets/results/ml_training_pipeline/training_progress.png`
 - 来源 CSV：未发现；本视觉项目不依赖 CSV
 
-上述 Windows 路径按项目溯源要求原样保留，只表示本次审计使用的只读来源；仓库内代码和运行命令不依赖这些机器特定路径。
+精确 Windows 路径保留在报告末尾的折叠溯源记录中；仓库代码和运行命令不依赖这些机器特定路径。
 
 本次没有修改、移动、改名或重新编码上述目录中的任何图片；没有修改旧权重、历史图表、CSV、Excel 或 manifest；没有重新计算训练指标或绘制新指标图。
 
@@ -30,7 +30,7 @@
 
 ### 3.1 完整原始目录
 
-只读审计确认 `D:\识万物APP\henan_data` 包含以下三个非空类别目录：
+只读审计记录确认 `henan-complete-source` 包含以下三个非空类别目录：
 
 1. `洛阳牡丹`
 2. `郑州商代青铜器`
@@ -40,7 +40,7 @@
 
 ### 3.2 不完整备份目录
 
-`D:\乱七八糟存档\河南AI项目\henan_data` 只保留“洛阳牡丹”和“郑州商代青铜器”，缺少“信阳毛尖茶树”。审计算法将其判定为不完整来源，并明确拒绝在缩减类别契约后继续训练。
+`henan-incomplete-backup` 只保留“洛阳牡丹”和“郑州商代青铜器”，缺少“信阳毛尖茶树”。审计算法将其判定为不完整来源，并明确拒绝在缩减类别契约后继续训练。
 
 ### 3.3 为什么暂不自动拆分
 
@@ -155,7 +155,7 @@ v2 检查点同时保存模型参数和语义契约，包括：模型架构、�
 
 ## 8. 后续执行顺序
 
-1. 保持 `D:\识万物APP\henan_data` 只读；
+1. 保持 `henan-complete-source` 只读；
 2. 在独立位置建立 provenance-preserving 数据副本；
 3. 人工确认拍摄对象和连续拍摄序列的分组；
 4. 冻结分区后先运行 `audit_dataset.py --require-training-ready`；
@@ -165,3 +165,13 @@ v2 检查点同时保存模型参数和语义契约，包括：模型架构、�
 8. 浮点模型通过后再单独评估部署和量化方案。
 
 这一路线让项目即使暂不重新训练，也能清楚展示算法判断、工程约束和可验证性，而不是依赖无法复现的旧准确率。
+
+<details>
+<summary>机器本地溯源路径（仅用于审计追踪）</summary>
+
+- `henan-complete-source`：`D:\识万物APP\henan_data`
+- `henan-incomplete-backup`：`D:\乱七八糟存档\河南AI项目\henan_data`
+- 来源 CSV：未发现；本视觉项目不依赖 CSV。
+- 上述目录在审计中保持只读，未移动、改名、重编码或训练。
+
+</details>

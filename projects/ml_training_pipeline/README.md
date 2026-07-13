@@ -17,7 +17,7 @@ Source provenance:
 
 This project restructures the original image-recognition code into a standard machine-learning project layout. The source assets describe a 3-class classifier for Henan-local visual categories: Luoyang peony, Zhengzhou Shang-dynasty bronze artifact, and Xinyang Maojian tea plant.
 
-This is separate from the wheat disease demo. It is kept as the core ML engineering project because it contains model definitions, preprocessing code, trained weights, quantized weights, GUI inference logic, and experiment metadata.
+This is separate from the wheat disease demo. It is preserved because it contains early model definitions, preprocessing code, weights, GUI inference logic, and experiment metadata; the current engineering evidence is the independent v2 implementation.
 
 ## Method
 

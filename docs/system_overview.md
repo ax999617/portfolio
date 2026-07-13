@@ -1,49 +1,47 @@
-# System Overview
+# Repository Overview
 
-Source provenance:
-
-- Current portfolio root: `portfolio`
-- Original wheat demo: `<local-source>/wheat-disease-demo`
-- Original ML training code: `<local-source>/ml-training`
-- Original ComfyUI workflows: `<local-source>/comfyui/workflows`
-- AutoHotkey runtime and scripts: `AutoHotkey v2 runtime`, `<local-source>/system-tools/autohotkey`
-- Source CSV: none identified in the inspected asset sets
-
-## Repository Map
+## Recommended path
 
 ```text
 portfolio/
-  README.md
-  projects/
-    cv_wheat_disease/       # CV inference demo and backend surface
-    ml_training_pipeline/   # train/eval/inference ML structure
-    comfyui_workflows/      # documented ComfyUI workflow packages
-    system_tools/           # low-priority AutoHotkey utility
-    misc_tools/             # support notes
-  assets/
-    images/                 # reference and sample images
-    results/                # copied result screenshots/figures
-    diagrams/               # architecture map
-  docs/
-    dataset_notes.md
-    methodology.md
-    system_overview.md
+|-- README.md
+|-- projects/
+|   |-- ml_training_pipeline/v2/                 # current ML engineering evidence
+|   |-- cv_wheat_disease_test_v1/                # current service contract
+|   `-- stats_variance_correlation_pipeline_test_v1/  # current read-only gate
+|-- docs/                                        # scope, method, provenance, policy
+`-- .github/workflows/                           # scoped CI
 ```
 
-## High-Level Flow
+Historical modules remain under their original paths but are not recommended runtimes:
+
+- `projects/ml_training_pipeline/` outside `v2/`;
+- `projects/cv_wheat_disease/`;
+- `projects/stats_variance_correlation_pipeline/`;
+- `projects/comfyui_workflows/`;
+- `projects/system_tools/` and `projects/misc_tools/`.
+
+## Verification flow
 
 ```mermaid
 flowchart LR
-  A["Local scattered assets"] --> B["Read-only inspection"]
-  B --> C["Project taxonomy"]
-  C --> D["Standard project directories"]
-  D --> E["README + configs + run entrypoints"]
-  E --> F["Recruiter-readable portfolio"]
+  A["Visitor claim"] --> B["Named code or document"]
+  B --> C["Scoped static check"]
+  B --> D["Synthetic or read-only test"]
+  C --> E["GitHub Actions"]
+  D --> F["Recorded local result"]
+  E --> G["Published evidence boundary"]
+  F --> G
 ```
 
-## Risk Notes
+The CI path intentionally avoids real training data, historical workflow JSON, CSV/Excel/manifest contents, statistics, CLD, reports, and figures.
 
-- The wheat disease backend is a demo MVP unless a real model is connected through the existing adapter.
-- The ML project includes weights and inference structure, but no new training metrics were generated.
-- ComfyUI output images are copied conservatively and labeled according to traceability.
-- AutoHotkey scripts are documented as a utility appendix and may require a v1-compatible runtime.
+## Provenance and source CSV
+
+- Current repository root: `D:\工作流\portfolio`
+- Wheat source label: `<local-source>/wheat-disease-demo`
+- ML source label: `<local-source>/ml-training`
+- ComfyUI source label: `<local-source>/comfyui/workflows`
+- Statistical original root: `D:\项目文件202605\制图数据`
+- Source CSV: `data\clean\soil_core_variables_latest_long.csv`, `soil_core_variables_latest_v3_long.csv`, `soil_physicochemical_latest_v3_wide.csv`, `soil_physicochemical_latest_wide.csv` under that root.
+- No CSV, Excel, manifest, statistic, CLD, weight, workflow, image metadata, or frozen figure was modified during this review.

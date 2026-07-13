@@ -1,32 +1,23 @@
-# ComfyUI Workflows
+# ComfyUI Workflows — Legacy Archive
 
-Source provenance:
+> **Not part of the recommended portfolio path.** These historical workflow files and candidate outputs are retained for provenance. Their dependencies, embedded metadata, output attribution, content suitability, and reuse permissions have not completed public-release review.
+
+## Archive contents
+
+- `axstar_inpaint/`: an inpainting graph record.
+- `noob_ai/`: a LoRA-assisted text-to-image graph record.
+- `regional_anime/`: a regional style graph record.
+- `composite_pipeline/`: a multi-stage ControlNet/detail graph record.
+
+The JSON files preserve historical graph structure. Example images are provenance candidates only; they are not presented as verified one-to-one workflow results. Model, LoRA, custom-node, and runtime versions are not locked well enough to claim reproducible execution.
+
+## Publication boundary
+
+Do not treat this directory as sanitized or release-ready. Before any future public case study, review workflow text, image metadata, dependency versions, model and input licenses, and exact input/output attribution. The neutral checklist is documented in [Generative Workflow Release Checklist](PUBLICATION_CHECKLIST.md).
+
+## Provenance
 
 - Workflow root: `<local-source>/comfyui/workflows`
-- Candidate output image root: `<local-source>/comfyui/output`
-- Source CSV: none identified in this asset set
-
-## Problem definition
-
-This project packages local ComfyUI workflows so they can be reviewed as reproducible generative pipelines rather than unexplained JSON files.
-
-## Method
-
-Each workflow is split into its own subdirectory with the original `workflow.json`, a README that explains inputs, node logic, outputs, and parameter effects, plus example outputs when a reliable local output candidate exists.
-
-## Implementation
-
-- `axstar_inpaint/` packages an inpainting workflow.
-- `noob_ai/` packages a LoRA-based text-to-image character workflow.
-- `regional_anime/` packages a regional/two-dimensional style workflow.
-- `composite_pipeline/` packages a large multi-stage ControlNet and regional-detail workflow.
-
-## How to run
-
-Open ComfyUI, import a subdirectory's `workflow.json`, confirm model/checkpoint/LoRA paths exist in the local ComfyUI installation, set prompts or input images, then queue the graph.
-
-Cloud note: workflow files have been sanitized for publication. Model references are relative placeholders such as `models/...`; replace them with the model names or subpaths available in your local ComfyUI setup before running.
-
-## Results
-
-Example outputs are included only when they can be traced to local ComfyUI output naming conventions. Ambiguous global outputs are labeled as candidates, not definitive workflow results.
+- Candidate output root: `<local-source>/comfyui/output`
+- Source CSV: none identified; this archive does not depend on CSV.
+- No workflow, model reference, image metadata, CSV, Excel, manifest, statistic, CLD, or frozen figure was modified during this review.
