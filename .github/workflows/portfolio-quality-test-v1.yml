@@ -1,0 +1,36 @@
+name: portfolio-quality-test-v1
+
+# Provenance: D:\工作流\portfolio, baseline a5a8e4012bc0a91d1d1eb81ce79d2605f0c6f186.
+# Source CSV: four tracked snapshots under the stats project; this workflow never opens
+# their contents and never runs training, statistics, CLD, report generation, or plotting.
+
+on:
+  pull_request:
+  push:
+    branches:
+      - "codex/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  read-only-contracts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run static portfolio gate
+        run: python tools/portfolio_quality_gate_test_v1.py
+
+      - name: Run CV service contract tests
+        run: python -m unittest discover -s projects/cv_wheat_disease_test_v1/tests -p "test*_test_v1.py" -v
+
+      - name: Run stats read-only gate tests
+        run: python -m unittest discover -s projects/stats_variance_correlation_pipeline_test_v1/tests -p "test*_test_v1.py" -v
