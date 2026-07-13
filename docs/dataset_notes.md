@@ -1,37 +1,39 @@
-# Dataset Notes
+# Data and Artifact Boundaries
 
-Source provenance:
+This page distinguishes current engineering evidence from historical or machine-local material. It does not assert that every archived asset is reproducible.
 
-- Wheat disease demo source: `<local-source>/wheat-disease-demo`
-- ML training source: `<local-source>/ml-training`
-- ComfyUI workflows: `<local-source>/comfyui/workflows`
-- AutoHotkey runtime: `AutoHotkey v2 runtime`
-- Source CSV: none identified in the inspected asset sets
+## Project boundaries
 
-## Wheat Disease Demo
+| Area | Current evidence | Boundary |
+|---|---|---|
+| Wheat API contract | Synthetic in-memory images, read-only knowledge JSON, 12 service-layer tests | No training images or validated disease model |
+| ML pipeline v2 | Configuration, source audit logic, strict checkpoints, 22 synthetic/offline tests | Local source audit record is not a public dataset; no real-data retraining |
+| Statistical assets | Four committed CSV snapshots and three frozen reference assets | Visitor gate checks paths only; it does not open values or recompute results |
+| ComfyUI archive | Historical workflow JSON and candidate outputs | Publication suitability, dependencies, attribution, and licenses are unresolved |
+| Windows automation | Historical AutoHotkey scripts | Runtime syntax mismatch is unresolved |
 
-The wheat project is represented by backend inference code, knowledge-base JSON, and screenshots from the demo flow. The source backend states that the current inference mode is an MVP demo rule engine with a reserved real-model adapter. Therefore this portfolio does not claim new accuracy results.
+## Statistical source CSV
 
-Representative screenshots were copied from `<local-source>/wheat-disease-demo/screenshots/2026-05-13_backend-demo` into `assets/results/cv_wheat_disease/`.
+Original root: `D:\项目文件202605\制图数据`
 
-## ML Training Pipeline
+- `data\clean\soil_core_variables_latest_long.csv`
+- `data\clean\soil_core_variables_latest_v3_long.csv`
+- `data\clean\soil_physicochemical_latest_v3_wide.csv`
+- `data\clean\soil_physicochemical_latest_wide.csv`
 
-The ML training source contains code, model weights, quantized weights, reference images, history JSON, knowledge JSON, and a training progress figure. The visible class intent is a 3-class image-recognition task for Henan-local categories. The source dataset directory itself was not found as a complete image-folder dataset in the provided root, so the portfolio provides train/eval/inference entrypoint structure without running a new training job.
+Committed snapshots are under `projects/stats_variance_correlation_pipeline/data/clean/`. The current read-only gate uses `Path.is_file()` only; it does not read their contents.
 
-Copied artifacts:
+## Historical artifacts
 
-- Full model weight: `projects/ml_training_pipeline/artifacts/weights/trained.pth`
-- Quantized weights: `projects/ml_training_pipeline/artifacts/weights/quantized.pth`, `projects/ml_training_pipeline/artifacts/weights/quantized_model.pth`
-- Training progress image: `assets/results/ml_training_pipeline/training_progress.png`
+- Legacy ML weights and the historical training curve are labeled `legacy/unverified`; v2 does not load them.
+- CV screenshots demonstrate an earlier UI/API flow, not model quality.
+- Statistical PDFs and PNGs are frozen source outputs; no CLD or statistic was regenerated.
+- ComfyUI images are candidates whose exact workflow attribution is not guaranteed.
 
-## ComfyUI Workflows
+## Provenance labels
 
-Four workflow JSON files were copied from the workflow root. Example images were copied only when local output filenames could be treated as reasonable candidates. Workflow READMEs distinguish exact copied workflow JSON from candidate output images.
-
-## Automation Scripts
-
-The user-provided AutoHotkey path is a runtime executable, not a script. Custom scripts were located under `<local-source>/system-tools/autohotkey` and copied into the low-priority system tools project.
-
-## Constraints Followed
-
-Existing source files were not edited. No CSV, Excel, or manifest files were modified. No statistical metrics, CLD letters, or frozen figures were recomputed or redrawn.
+- Wheat source: `<local-source>/wheat-disease-demo`
+- ML source: `<local-source>/ml-training`; exact machine-local audit paths remain in the collapsed provenance record of the [algorithm report](../projects/ml_training_pipeline/v2/ALGORITHM_REFACTOR_REPORT.md).
+- ComfyUI source: `<local-source>/comfyui/workflows`, `<local-source>/comfyui/output`
+- Statistical root: `D:\项目文件202605\制图数据`
+- No CSV, Excel, manifest, statistic, CLD, model weight, or frozen figure was modified during the visitor-copy review.

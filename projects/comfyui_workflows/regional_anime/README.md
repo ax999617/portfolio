@@ -1,38 +1,18 @@
-# Regional Anime Workflow
+# Regional Style Workflow — Legacy Record
 
-Source provenance:
+> This graph is retained for provenance and has not completed public-release review. It is not a supported or reproducible portfolio entrypoint.
 
-- Original workflow file: `<local-source>/comfyui/workflows/分区工作流（二次元）.json`
+## Preserved graph
+
+The workflow records regional prompt handling, checkpoint and LoRA loading, latent-canvas configuration, sampling, decoding, and image saving. `workflow.json` is the historical graph; `example_outputs/` contains a candidate local output whose one-to-one attribution has not been independently confirmed.
+
+## Review requirements
+
+Before reuse, verify model and LoRA licenses, runtime and node versions, prompt and image metadata, input rights, and exact output attribution. See the parent [publication checklist](../PUBLICATION_CHECKLIST.md).
+
+## Provenance
+
+- Original workflow: `<local-source>/comfyui/workflows/分区工作流（二次元）.json`
 - Candidate output root: `<local-source>/comfyui/output`
-- Source CSV: none identified in this asset set
-
-## Problem definition
-
-This workflow packages a regional style generation generation pipeline so it can be reviewed, imported, and reproduced in ComfyUI.
-
-## Method
-
-Pipeline logic:
-
-- Input: prompt text, LoRA settings, latent canvas, sampler settings, and seed
-- Core nodes: CheckpointLoaderSimple, LoraLoader, CLIPTextEncode, EmptyLatentImage, KSampler, VAEDecode, SaveImage.
-- Output: a saved stylized image
-- Parameter behavior: prompt regions and LoRA strength influence local style; seed controls variation; sampler settings control texture/detail
-
-## Implementation
-
-- `workflow.json` is copied from the original local workflow.
-- `example_outputs/` stores representative local outputs when available.
-- The README explains the graph at pipeline level so the JSON is not an opaque dump.
-
-## How to run
-
-1. Start ComfyUI from the local installation.
-2. Import this directory's `workflow.json`.
-3. Confirm referenced checkpoint, LoRA, ControlNet, and custom-node dependencies are installed.
-4. Set input image or prompt values.
-5. Queue the workflow and inspect saved images.
-
-## Results
-
-Example output copied from `<local-source>/comfyui/output/Illustrious_character_pose_00004_.png` into `example_outputs/Illustrious_character_pose_00004_.png`. For generic filename prefixes, treat this as a local output candidate rather than a guaranteed single-workflow artifact.
+- Candidate output: `<local-source>/comfyui/output/Illustrious_character_pose_00004_.png`
+- Source CSV: none identified in this asset set.

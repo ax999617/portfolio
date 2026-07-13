@@ -1,29 +1,37 @@
-# Methodology
+# Engineering and Documentation Method
 
-Source provenance:
+## Evidence-first structure
 
-- Source roots: `<local-source>/wheat-disease-demo`, `<local-source>/ml-training`, `<local-source>/comfyui/workflows`, `AutoHotkey v2 runtime`
-- Source CSV: none identified in the inspected asset sets
+The public portfolio is organized by what a visitor can verify, not by the amount of archived material:
 
-## Consolidation Approach
+1. **Current engineering projects** point to code, tests, and explicit failure behavior.
+2. **Read-only evidence modules** expose provenance and safety boundaries without recalculation.
+3. **Historical archives** remain available for traceability but are not presented as supported runtimes.
 
-The portfolio was organized around project intent rather than original disk layout:
+The recommended path is ML pipeline v2, the wheat service contract, and the statistical read-only gate. Legacy CV, ML weights, ComfyUI workflows, and Windows scripts are clearly separated from that path.
 
-- Application demo assets became `cv_wheat_disease`.
-- Model code, weights, preprocessing, quantization, and GUI logic became `ml_training_pipeline`.
-- Workflow JSON files became documented ComfyUI subprojects.
-- AutoHotkey scripts became a low-priority utility project.
+## Claim discipline
 
-## Engineering Refactor
+- Test results describe code behavior, not real-world model quality.
+- Local source audits are labeled as local records rather than public dataset results.
+- Historical outputs are not attributed to new code without a reproducible link.
+- Missing training, deployment, HTTP, monitoring, dependency, and license evidence is stated directly.
+- “Reproducible” is reserved for a scope with documented inputs, versions, commands, and output attribution.
 
-The refactor avoided a flat copy by adding:
+## Verification layers
 
-- README files with problem, method, implementation, run instructions, and results.
-- Config files that extract model classes, image preprocessing, and artifact paths.
-- Separate train, eval, and inference entrypoints for the ML project.
-- A lightweight CV inference demo script that exercises the backend inference/risk/response chain.
-- Per-workflow ComfyUI explanations covering input, nodes, output, and parameters.
+- Python AST parsing for current quality-gate roots.
+- JSON parsing limited to two named current configuration/knowledge files.
+- Markdown link checks limited to visitor-facing documents.
+- 22 offline ML tests using synthetic images/tensors.
+- 12 CV service-layer tests using decoded synthetic images and read-only knowledge JSON.
+- 2 statistical gate tests that verify no output creation.
 
-## Reproducibility Boundary
+The FastAPI adapter is not yet covered by HTTP route tests. The CI workflow does not install PyTorch or run the 22 ML tests; those remain a documented local verification layer.
 
-The portfolio is reproducible at the project-structure and local-inference level. It does not fabricate missing training results, does not rerun training, and does not infer metrics absent from the source assets.
+## Provenance and source CSV
+
+- Source labels: `<local-source>/wheat-disease-demo`, `<local-source>/ml-training`, `<local-source>/comfyui/workflows`, `AutoHotkey v2 runtime`
+- Statistical original root: `D:\项目文件202605\制图数据`
+- Source CSV: `data\clean\soil_core_variables_latest_long.csv`, `soil_core_variables_latest_v3_long.csv`, `soil_physicochemical_latest_v3_wide.csv`, `soil_physicochemical_latest_wide.csv` under that root.
+- This documentation review did not read or modify CSV/Excel/manifest contents and did not run statistics, CLD, training, report generation, or plotting.

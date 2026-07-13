@@ -44,7 +44,7 @@ def build_read_only_plan(project_root: str | Path) -> dict[str, object]:
         "source_csv": source_csv,
         "frozen_assets": frozen_assets,
         "blocked_legacy_write_targets": write_targets,
-        "complete": all(item["exists"] for item in source_csv + frozen_assets),
+        "required_files_present": all(item["exists"] for item in source_csv + frozen_assets),
     }
 
 
@@ -59,7 +59,7 @@ def main() -> int:
     args = parse_args()
     plan = build_read_only_plan(args.project_root)
     print(json.dumps(plan, ensure_ascii=False, indent=2))
-    return 2 if args.strict and not plan["complete"] else 0
+    return 2 if args.strict and not plan["required_files_present"] else 0
 
 
 if __name__ == "__main__":

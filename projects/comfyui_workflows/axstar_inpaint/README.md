@@ -1,38 +1,18 @@
-# Axstar Inpaint Workflow
+# Inpainting Workflow — Legacy Record
 
-Source provenance:
+> This graph is retained for provenance and has not completed public-release review. It is not a supported or reproducible portfolio entrypoint.
 
-- Original workflow file: `<local-source>/comfyui/workflows/axstar_inpaint.json`
+## Preserved graph
+
+The workflow combines a base image, mask, text prompts, checkpoint/LoRA settings, inpainting encode/decode nodes, sampling, mask blur, compositing, and image saving. `workflow.json` is the historical graph; `example_outputs/` contains a candidate local output whose one-to-one attribution has not been independently confirmed.
+
+## Review requirements
+
+Before reuse, verify model and custom-node versions, input rights, embedded text and image metadata, and exact output attribution. See the parent [publication checklist](../PUBLICATION_CHECKLIST.md).
+
+## Provenance
+
+- Original workflow: `<local-source>/comfyui/workflows/axstar_inpaint.json`
 - Candidate output root: `<local-source>/comfyui/output`
-- Source CSV: none identified in this asset set
-
-## Problem definition
-
-This workflow packages a inpainting generation pipeline so it can be reviewed, imported, and reproduced in ComfyUI.
-
-## Method
-
-Pipeline logic:
-
-- Input: a base image, a mask/alpha channel, positive and negative text prompts, checkpoint and LoRA settings
-- Core nodes: CheckpointLoaderSimple, LoraLoader, LoadImage, LoadImageMask, VAEEncodeForInpaint, KSampler, VAEDecode, ImageCompositeMasked, MaskBlur, SaveImage.
-- Output: an inpainted image and a composited image
-- Parameter behavior: mask blur changes edge blending; sampler steps/CFG/seed control denoising strength and variation; LoRA strength changes style influence
-
-## Implementation
-
-- `workflow.json` is copied from the original local workflow.
-- `example_outputs/` stores representative local outputs when available.
-- The README explains the graph at pipeline level so the JSON is not an opaque dump.
-
-## How to run
-
-1. Start ComfyUI from the local installation.
-2. Import this directory's `workflow.json`.
-3. Confirm referenced checkpoint, LoRA, ControlNet, and custom-node dependencies are installed.
-4. Set input image or prompt values.
-5. Queue the workflow and inspect saved images.
-
-## Results
-
-Example output copied from `<local-source>/comfyui/output/axstar_inpaint_composited_00014_.png` into `example_outputs/axstar_inpaint_composited_00014_.png`. For generic filename prefixes, treat this as a local output candidate rather than a guaranteed single-workflow artifact.
+- Candidate output: `<local-source>/comfyui/output/axstar_inpaint_composited_00014_.png`
+- Source CSV: none identified in this asset set.
