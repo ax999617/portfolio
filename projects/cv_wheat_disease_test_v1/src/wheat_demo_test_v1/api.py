@@ -2,7 +2,13 @@ from __future__ import annotations
 
 from fastapi import FastAPI, File, HTTPException, UploadFile
 
-from .service import CONTRACT_VERSION, InputValidationError, PredictionService, ProviderContractError
+from .service import (
+    CONTRACT_VERSION,
+    InputValidationError,
+    PredictionService,
+    ProviderContractError,
+    ProviderExecutionError,
+)
 
 
 service = PredictionService()
@@ -33,4 +39,9 @@ async def predict(file: UploadFile = File(...)) -> dict[str, object]:
         raise HTTPException(
             status_code=503,
             detail={"code": "provider_contract_error", "message": str(exc)},
+        ) from exc
+    except ProviderExecutionError as exc:
+        raise HTTPException(
+            status_code=503,
+            detail={"code": "provider_execution_error", "message": str(exc)},
         ) from exc

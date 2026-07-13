@@ -17,6 +17,7 @@ from wheat_demo_test_v1.service import (  # noqa: E402
     Prediction,
     PredictionService,
     ProviderContractError,
+    ProviderExecutionError,
 )
 
 
@@ -112,19 +113,17 @@ class ServiceContractTests(unittest.TestCase):
         self.assertEqual(result["risk"]["risk_level"], "red")
         self.assertIn("模型结果", result["risk"]["risk_reason"])
 
-    def test_unavailable_provider_falls_back_with_reason(self) -> None:
-        result = PredictionService(model_predictor=UnavailableModel()).predict(
-            PNG_BYTES, "sample.png", "image/png"
-        )
-        self.assertEqual(result["mode"], "demo_mock")
-        self.assertEqual(result["fallback_reason"], "real_model_unavailable")
+    def test_unavailable_provider_fails_closed(self) -> None:
+        with self.assertRaises(ProviderExecutionError):
+            PredictionService(model_predictor=UnavailableModel()).predict(
+                PNG_BYTES, "sample.png", "image/png"
+            )
 
-    def test_unexpected_provider_failure_is_visible(self) -> None:
-        result = PredictionService(model_predictor=BrokenModel()).predict(
-            PNG_BYTES, "sample.png", "image/png"
-        )
-        self.assertEqual(result["mode"], "demo_mock")
-        self.assertEqual(result["fallback_reason"], "real_model_failed")
+    def test_unexpected_provider_failure_fails_closed(self) -> None:
+        with self.assertRaises(ProviderExecutionError):
+            PredictionService(model_predictor=BrokenModel()).predict(
+                PNG_BYTES, "sample.png", "image/png"
+            )
 
     def test_invalid_provider_contract_fails_closed(self) -> None:
         with self.assertRaises(ProviderContractError):

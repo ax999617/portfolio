@@ -66,7 +66,11 @@ class InputValidationError(ValueError):
 
 
 class ModelUnavailableError(RuntimeError):
-    """A real provider may raise this to request an explicit demo fallback."""
+    """A real provider may raise this when required model resources are unavailable."""
+
+
+class ProviderExecutionError(RuntimeError):
+    """Raised when an injected real provider cannot return a trustworthy result."""
 
 
 class ProviderContractError(RuntimeError):
@@ -159,12 +163,10 @@ class PredictionService:
         else:
             try:
                 prediction = self.model_predictor.predict(image_bytes, filename)
-            except ModelUnavailableError:
-                prediction = self.demo_predictor.predict(image_bytes, filename)
-                fallback_reason = "real_model_unavailable"
-            except Exception:
-                prediction = self.demo_predictor.predict(image_bytes, filename)
-                fallback_reason = "real_model_failed"
+            except ModelUnavailableError as exc:
+                raise ProviderExecutionError("real model provider is unavailable") from exc
+            except Exception as exc:
+                raise ProviderExecutionError("real model provider failed") from exc
 
         self._validate_prediction(prediction)
         risk = evaluate_risk(prediction.class_id, prediction.confidence, prediction.mode)
