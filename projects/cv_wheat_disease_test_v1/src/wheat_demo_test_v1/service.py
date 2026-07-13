@@ -1,10 +1,14 @@
 from __future__ import annotations
 
 import hashlib
+import io
 import json
+import warnings
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Protocol
+
+from PIL import Image, UnidentifiedImageError
 
 
 CONTRACT_VERSION = "test-v1"
@@ -25,6 +29,21 @@ ALLOWED_CONTENT_TYPES = {
 ALLOWED_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".bmp", ".tif", ".tiff"}
 MIN_FILE_SIZE = 100
 DEFAULT_MAX_FILE_SIZE = 5 * 1024 * 1024
+DEFAULT_MAX_IMAGE_PIXELS = 20_000_000
+FORMAT_EXTENSIONS = {
+    "PNG": {".png"},
+    "JPEG": {".jpg", ".jpeg"},
+    "WEBP": {".webp"},
+    "BMP": {".bmp"},
+    "TIFF": {".tif", ".tiff"},
+}
+FORMAT_CONTENT_TYPES = {
+    "PNG": {"image/png"},
+    "JPEG": {"image/jpeg"},
+    "WEBP": {"image/webp"},
+    "BMP": {"image/bmp"},
+    "TIFF": {"image/tiff"},
+}
 DISCLAIMER = (
     "本结果仅用于演示 API、风险与知识合同，不是真实视觉诊断；"
     "涉及农作物病害或食品安全时，必须由专业人员和实验室检测复核。"
@@ -117,13 +136,17 @@ class PredictionService:
         *,
         knowledge_path: str | Path = DEFAULT_KNOWLEDGE_PATH,
         max_file_size: int = DEFAULT_MAX_FILE_SIZE,
+        max_image_pixels: int = DEFAULT_MAX_IMAGE_PIXELS,
     ) -> None:
         if max_file_size < MIN_FILE_SIZE:
             raise ValueError("max_file_size must be at least MIN_FILE_SIZE")
+        if max_image_pixels < 1:
+            raise ValueError("max_image_pixels must be positive")
         self.model_predictor = model_predictor
         self.demo_predictor = DemoPredictor()
         self.knowledge_path = Path(knowledge_path)
         self.max_file_size = max_file_size
+        self.max_image_pixels = max_image_pixels
         self._knowledge_cache: dict[str, object] | None = None
 
     def predict(self, image_bytes: bytes, filename: str, content_type: str | None) -> dict[str, object]:
@@ -144,7 +167,7 @@ class PredictionService:
                 fallback_reason = "real_model_failed"
 
         self._validate_prediction(prediction)
-        risk = evaluate_risk(prediction.class_id, prediction.confidence)
+        risk = evaluate_risk(prediction.class_id, prediction.confidence, prediction.mode)
         knowledge = self._knowledge_for(prediction.class_id)
         return {
             "success": True,
@@ -178,10 +201,16 @@ class PredictionService:
 
         extension = Path(filename).suffix.casefold()
         normalized_type = (content_type or "").split(";", 1)[0].strip().casefold()
-        if normalized_type not in ALLOWED_CONTENT_TYPES and extension not in ALLOWED_EXTENSIONS:
+        if extension not in ALLOWED_EXTENSIONS:
+            raise InputValidationError("unsupported_type", "文件扩展名不在支持列表中")
+        if normalized_type and normalized_type not in ALLOWED_CONTENT_TYPES:
             raise InputValidationError("unsupported_type", "仅支持常见图片格式")
-        if not _has_supported_image_signature(image_bytes):
-            raise InputValidationError("invalid_signature", "文件内容不是受支持的图片签名")
+
+        detected_format = _verify_image_bytes(image_bytes, self.max_image_pixels)
+        if extension not in FORMAT_EXTENSIONS[detected_format]:
+            raise InputValidationError("type_mismatch", "文件扩展名与图片实际格式不一致")
+        if normalized_type and normalized_type not in FORMAT_CONTENT_TYPES[detected_format]:
+            raise InputValidationError("type_mismatch", "MIME 类型与图片实际格式不一致")
 
     def _validate_prediction(self, prediction: Prediction) -> None:
         if not isinstance(prediction, Prediction):
@@ -210,40 +239,64 @@ class PredictionService:
         return entry
 
 
-def _has_supported_image_signature(image_bytes: bytes) -> bool:
-    return any(
-        (
-            image_bytes.startswith(b"\x89PNG\r\n\x1a\n"),
-            image_bytes.startswith(b"\xff\xd8\xff"),
-            image_bytes.startswith(b"BM"),
-            image_bytes.startswith(b"II*\x00"),
-            image_bytes.startswith(b"MM\x00*"),
-            len(image_bytes) >= 12 and image_bytes[:4] == b"RIFF" and image_bytes[8:12] == b"WEBP",
-        )
-    )
+def _verify_image_bytes(image_bytes: bytes, max_image_pixels: int) -> str:
+    """Decode a bounded image and return its normalized container format."""
+
+    try:
+        with warnings.catch_warnings():
+            warnings.simplefilter("error", Image.DecompressionBombWarning)
+            with Image.open(io.BytesIO(image_bytes)) as image:
+                detected_format = (image.format or "").upper()
+                if detected_format not in FORMAT_EXTENSIONS:
+                    raise InputValidationError("unsupported_type", "图片实际格式不在支持列表中")
+                width, height = image.size
+                if width < 1 or height < 1:
+                    raise InputValidationError("invalid_image", "图片尺寸无效")
+                if width * height > max_image_pixels:
+                    raise InputValidationError("image_too_large", "图片像素数量超过允许上限")
+                image.verify()
+
+            # Pillow documents verify() as a structural check. Reopen and load the
+            # pixels so truncated or corrupt compressed payloads also fail.
+            with Image.open(io.BytesIO(image_bytes)) as image:
+                image.load()
+    except InputValidationError:
+        raise
+    except (
+        Image.DecompressionBombError,
+        Image.DecompressionBombWarning,
+        UnidentifiedImageError,
+        OSError,
+        SyntaxError,
+        ValueError,
+    ) as exc:
+        raise InputValidationError("invalid_image", "文件不是可完整解码的受支持图片") from exc
+
+    return detected_format
 
 
-def evaluate_risk(class_id: str, confidence: float) -> dict[str, str]:
+def evaluate_risk(class_id: str, confidence: float, mode: str) -> dict[str, str]:
+    result_label = "模拟结果" if mode == "demo_mock" else "模型结果"
     if confidence < 0.45:
         return {
             "risk_level": "yellow",
             "risk_label": "低置信度",
-            "risk_reason": "演示结果不稳定，建议重新上传并由专业人员复核。",
+            "risk_reason": f"{result_label}置信度较低，建议重新上传并由专业人员复核。",
         }
     if class_id == "healthy" and confidence >= 0.70:
         return {
             "risk_level": "green",
             "risk_label": "低风险演示",
-            "risk_reason": "mock 结果为健康；该结果不构成真实诊断。",
+            "risk_reason": f"{result_label}为健康；该结果不构成真实诊断。",
         }
     if class_id == "fusarium" and confidence >= 0.60:
         return {
             "risk_level": "red",
             "risk_label": "高关注演示",
-            "risk_reason": "mock 结果进入高关注分支，必须由专业人员和实验室检测复核。",
+            "risk_reason": f"{result_label}进入高关注分支，必须由专业人员和实验室检测复核。",
         }
     return {
         "risk_level": "yellow",
         "risk_label": "需复核演示",
-        "risk_reason": "mock 结果进入复核分支，不可直接用于农业或食品安全决策。",
+        "risk_reason": f"{result_label}进入复核分支，不可直接用于农业或食品安全决策。",
     }

@@ -1,8 +1,11 @@
 from __future__ import annotations
 
+import io
 import sys
 import unittest
 from pathlib import Path
+
+from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -17,7 +20,15 @@ from wheat_demo_test_v1.service import (  # noqa: E402
 )
 
 
-PNG_BYTES = b"\x89PNG\r\n\x1a\n" + b"test-v1" * 20
+def make_png_bytes() -> bytes:
+    pixels = bytes((index * 37 + index // 3 * 11) % 256 for index in range(32 * 32 * 3))
+    image = Image.frombytes("RGB", (32, 32), pixels)
+    buffer = io.BytesIO()
+    image.save(buffer, format="PNG")
+    return buffer.getvalue()
+
+
+PNG_BYTES = make_png_bytes()
 
 
 class StaticModel:
@@ -48,6 +59,7 @@ class ServiceContractTests(unittest.TestCase):
         self.assertEqual(first, second)
         self.assertEqual(first["mode"], "demo_mock")
         self.assertEqual(first["fallback_reason"], "real_model_not_configured")
+        self.assertIn("模拟结果", first["risk"]["risk_reason"])
 
     def test_filename_keyword_is_only_a_mock_selector(self) -> None:
         result = PredictionService().predict(PNG_BYTES, "健康_sample.png", "image/png")
@@ -63,10 +75,30 @@ class ServiceContractTests(unittest.TestCase):
     def test_invalid_signature_is_rejected(self) -> None:
         with self.assertRaises(InputValidationError) as context:
             PredictionService().predict(b"not-an-image" * 20, "fake.png", "image/png")
-        self.assertEqual(context.exception.code, "invalid_signature")
+        self.assertEqual(context.exception.code, "invalid_image")
+
+    def test_truncated_image_with_valid_signature_is_rejected(self) -> None:
+        payload = b"\x89PNG\r\n\x1a\n" + b"not-a-complete-png" * 10
+        with self.assertRaises(InputValidationError) as context:
+            PredictionService().predict(payload, "truncated.png", "image/png")
+        self.assertEqual(context.exception.code, "invalid_image")
+
+    def test_extension_and_mime_must_match_decoded_format(self) -> None:
+        cases = (("sample.jpg", "image/png"), ("sample.png", "image/jpeg"))
+        for filename, content_type in cases:
+            with self.subTest(filename=filename, content_type=content_type):
+                with self.assertRaises(InputValidationError) as context:
+                    PredictionService().predict(PNG_BYTES, filename, content_type)
+                self.assertEqual(context.exception.code, "type_mismatch")
+
+    def test_decoded_pixel_limit_is_enforced(self) -> None:
+        service = PredictionService(max_image_pixels=32 * 32 - 1)
+        with self.assertRaises(InputValidationError) as context:
+            service.predict(PNG_BYTES, "sample.png", "image/png")
+        self.assertEqual(context.exception.code, "image_too_large")
 
     def test_size_limit_is_enforced(self) -> None:
-        service = PredictionService(max_file_size=120)
+        service = PredictionService(max_file_size=len(PNG_BYTES) - 1)
         with self.assertRaises(InputValidationError) as context:
             service.predict(PNG_BYTES, "large.png", "image/png")
         self.assertEqual(context.exception.code, "file_too_large")
@@ -78,6 +110,7 @@ class ServiceContractTests(unittest.TestCase):
         self.assertEqual(result["mode"], "model")
         self.assertIsNone(result["fallback_reason"])
         self.assertEqual(result["risk"]["risk_level"], "red")
+        self.assertIn("模型结果", result["risk"]["risk_reason"])
 
     def test_unavailable_provider_falls_back_with_reason(self) -> None:
         result = PredictionService(model_predictor=UnavailableModel()).predict(
