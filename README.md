@@ -9,7 +9,7 @@ The focus is not a raw file dump: each module has a clear project story, scoped 
 **Computer Vision / ML**
 
 - `projects/cv_wheat_disease/`: Wheat disease visual-classification demo with separated inference logic, risk explanation, and sample UI/backend outputs.
-- `projects/ml_training_pipeline/`: Refactored image-recognition training pipeline with config files, model artifacts, train/eval/inference separation, and reference assets.
+- `projects/ml_training_pipeline/v2/`: Resource-aware image-classification pipeline with strict data/model contracts, fail-closed checkpoints, and synthetic offline verification; the parent directory preserves the legacy prototype.
 
 **Data Analysis**
 
@@ -28,7 +28,7 @@ The focus is not a raw file dump: each module has a clear project story, scoped 
 ## Recommended Reading Order
 
 1. `projects/cv_wheat_disease/README.md`
-2. `projects/ml_training_pipeline/README.md`
+2. `projects/ml_training_pipeline/v2/README.md`
 3. `projects/stats_variance_correlation_pipeline/README.md`
 4. `projects/comfyui_workflows/README.md`
 5. `docs/methodology.md`
@@ -40,6 +40,7 @@ portfolio/
 |-- projects/
 |   |-- cv_wheat_disease/
 |   |-- ml_training_pipeline/
+|   |   `-- v2/
 |   |-- stats_variance_correlation_pipeline/
 |   |-- comfyui_workflows/
 |   |-- system_tools/
@@ -53,4 +54,4 @@ portfolio/
 
 ## Reproducibility
 
-Each project includes its own README with the problem definition, method, implementation layout, run instructions, and output examples. Local absolute paths and private machine details are intentionally omitted from this cloud version.
+Each project includes its own README with the problem definition, method, implementation layout, run instructions, and output examples. Private machine details are omitted unless an existing research module explicitly retains a source path as part of its provenance record.
